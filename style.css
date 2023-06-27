@@ -52,13 +52,14 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #0154bc;
+  height: 48px; /* Ajusta la altura según tus necesidades */
 }
 
 .logo img {
   width: 100px;
-  height: 48px;
-  margin-left: 600px;
+  height: auto; /* Para mantener la proporción de la imagen */
 }
 
 .navbar {
@@ -150,6 +151,8 @@ header {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Estilos para la animación */
