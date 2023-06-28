@@ -94,17 +94,6 @@ header {
   font-size: 24px;
   margin-bottom: 5px;
 }
-.navbarAfter::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  transform: translateY(-50%);
-  height: 20px;
-  width: 1px;
-  background-color: #0a0094;
-
-}
 .nav-item::after {
   content: "";
   position: absolute;
@@ -113,7 +102,7 @@ header {
   transform: translateY(-50%);
   height: 20px;
   width: 1px;
-  color: white;
+  background-color: #999;
 }
 
 .nav-item:last-child::after {
