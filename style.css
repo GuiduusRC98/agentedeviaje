@@ -176,6 +176,9 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   text-align: center;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
 }
 
 .rounded-image {
@@ -189,6 +192,10 @@ nav {
   margin-top: 10px;
 }
 
+.titulo_servicio{
+  font-size: 24px;
+  color: rgb(47, 179, 223);
+}
 
 /* Estilos para la animación */
 .animate__animated {
