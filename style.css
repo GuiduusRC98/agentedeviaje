@@ -54,7 +54,8 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #0154bc;
-  height: 48px; /* Ajusta la altura según tus necesidades */
+  height: 48px;
+  animation: aparecer 1s ease-in-out forwards;
 }
 
 .logo img {
@@ -163,6 +164,17 @@ header {
 
 .animate__fadeInUp {
   animation-name: fadeInUp;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes fadeInUp {
