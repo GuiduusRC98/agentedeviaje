@@ -95,10 +95,6 @@ header {
   margin-bottom: 5px;
 }
 
-.nav-link::before {
-  background-color: #4f91e0;
-}
-
 .nav-item::after {
   content: "";
   position: absolute;
