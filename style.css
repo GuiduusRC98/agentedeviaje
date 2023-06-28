@@ -60,30 +60,54 @@ header {
 
 .logo img {
   width: 100px;
-  height: auto; /* Para mantener la proporción de la imagen */
+  height: auto;
+  /* Para mantener la proporción de la imagen */
 }
 
 .navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
 
-.navbar ul {
-  display: flex;
-}
-
-.navbar li {
+.nav-item {
   margin: 0 10px;
+  position: relative;
 }
 
-.navbar a {
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
 }
 
-.navbar a:hover {
-  color: #555;
+.nav-link i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 1px;
+  background-color: #999;
+}
+
+.nav-item:last-child::after {
+  display: none;
 }
 
 .carousel-item {
@@ -171,6 +195,7 @@ header {
     opacity: 0;
     transform: scale(0);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -182,6 +207,7 @@ header {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
     transform: none;
