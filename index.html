@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Agente de Viajes Disney</title>
-  </head>
 
-  <body>
-    <div class="logo">
-      <img src="img/logo_gabita.png" alt="logo de gabita traver planner" />
-    </div>
-    <header>
-      <nav class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Agente de Viajes Disney</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="img/logo_gabita.png" alt="logo de gabita traver planner" />
+  </div>
+  <header>
+    <nav class="navbar">
+      <div class="navbarAfter">
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -26,166 +25,142 @@
               <span>Hoteles</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-tags"></i>
-              <span>Promociones</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-gift"></i>
-              <span>Ofertas especiales</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="hero">
-      <!-- Contenido principal -->
-      <div class="container mt-4">
-        <!-- Noticia -->
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExample"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExample" data-slide-to="1"></li>
-            <li data-target="#carouselExample" data-slide-to="2"></li>
-            <li data-target="#carouselExample" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="img/disney_crucero.jpeg"
-                class="d-block w-100 max-inicio"
-                alt="Noticia 1"
-              />
-              <div class="carousel-caption">
-                <div class="caption-content">
-                  <h3>Título del carrusel</h3>
-                  <a href="#" class="btn btn-primary">+ Información</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/universal.jpeg"
-                class="d-block w-100 max-inicio"
-                alt="Noticia 2"
-              />
-              <div class="carousel-caption">
-                <div class="caption-content">
-                  <h3>Título del carrusel</h3>
-                  <a href="#" class="btn btn-primary">+ Información</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/disney_parque.jpeg"
-                class="d-block w-100 max-inicio"
-                alt="Noticia 3"
-              />
-              <div class="carousel-caption">
-                <div class="caption-content">
-                  <h3>Título del carrusel</h3>
-                  <a href="#" class="btn btn-primary">+ Información</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/miami.jpeg"
-                class="d-block w-100 max-inicio"
-                alt="Noticia 4"
-              />
-              <div class="carousel-caption">
-                <div class="caption-content">
-                  <h3>Título del carrusel</h3>
-                  <a href="#" class="btn btn-primary">+ Información</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExample"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
+      </div>
+      <div class="navbarAfter">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-tags"></i>
+            <span>Promociones</span>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExample"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
+        </li>
+      </div>
+      <div class="navbarAfter">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-gift"></i>
+            <span>Ofertas especiales</span>
           </a>
-        </div>
+        </li>
       </div>
-    </section>
-    <div class="card-container">
-        <div class="card animate__animated animate__fadeInUp">
-          <img src="img/disney_magic.jpeg" alt="Descripción de la imagen" class="rounded-image" />
-          <div class="card-content">
-            <h3>Crucero Disney Magic</h3>
-            <p>
-              Navegando en <strong>Disney Magic</strong>, septiembre 2024 dos adultos por cuatro noches con salida desde
-              fort lauderdale visitaras Lighthouse y Nassau bahamas con tematica Halloween.
-            </p>
-            <p>Desde usd 1.731</p>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+      <!-- Noticia -->
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample" data-slide-to="1"></li>
+          <li data-target="#carouselExample" data-slide-to="2"></li>
+          <li data-target="#carouselExample" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/disney_crucero.jpeg" class="d-block w-100 max-inicio" alt="Noticia 1" />
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h3>Título del carrusel</h3>
+                <a href="#" class="btn btn-primary">+ Información</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/universal.jpeg" class="d-block w-100 max-inicio" alt="Noticia 2" />
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h3>Título del carrusel</h3>
+                <a href="#" class="btn btn-primary">+ Información</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/disney_parque.jpeg" class="d-block w-100 max-inicio" alt="Noticia 3" />
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h3>Título del carrusel</h3>
+                <a href="#" class="btn btn-primary">+ Información</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/miami.jpeg" class="d-block w-100 max-inicio" alt="Noticia 4" />
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h3>Título del carrusel</h3>
+                <a href="#" class="btn btn-primary">+ Información</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card animate__animated animate__fadeInUp">
-          <img src="img/disney_dream.jpeg" alt="Descripción de la imagen" class="rounded-image" />
-          <div class="card-content">
-            <h3>Crucero Disney Dream</h3>
-            <p>
-              Navegando en <strong>Disney Dream</strong>, Noviembre 2024 dos adultos por cuatro noches con salida desde fort
-              lauderdale visitaras Lighthouse y Nassau bahamas con tematica Very Merrytime-navidad.
-            </p>
-            <p>Desde usd 2.498</p>
-          </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="card-container">
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="img/disney_magic.jpeg" alt="Descripción de la imagen" class="rounded-image" />
+      <div class="card-content">
+        <h3>Crucero Disney Magic</h3>
+        <p>
+          Navegando en <strong>Disney Magic</strong>, septiembre 2024 dos adultos por cuatro noches con salida desde
+          fort lauderdale visitaras Lighthouse y Nassau bahamas con tematica Halloween.
+        </p>
+        <p>Desde usd 1.731</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="img/disney_dream.jpeg" alt="Descripción de la imagen" class="rounded-image" />
+      <div class="card-content">
+        <h3>Crucero Disney Dream</h3>
+        <p>
+          Navegando en <strong>Disney Dream</strong>, Noviembre 2024 dos adultos por cuatro noches con salida desde fort
+          lauderdale visitaras Lighthouse y Nassau bahamas con tematica Very Merrytime-navidad.
+        </p>
+        <p>Desde usd 2.498</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
         </div>
-      </div>      
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" required></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-    <section id="contacto">
-      <div class="container">
-        <h2>Contacto</h2>
-        <form>
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" required></textarea>
-          </div>
-          <button class="boton" type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 Todos los derechos reservados.</p>
-      </div>
-    </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
 </html>
