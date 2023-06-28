@@ -108,7 +108,7 @@ nav {
   transform: translateY(-50%);
   height: 20px;
   width: 1px;
-  background-color: white;
+  background-color: rgb(134, 134, 134);
 }
 
 .nav-item:last-child::after {
