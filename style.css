@@ -64,7 +64,7 @@ header {
 }
 
 .navbarGabita {
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 10px;
 }
 
@@ -74,14 +74,13 @@ header {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #f2f2f2;
-  color: #0154bc;
 }
 
 .nav-item {
   margin: 0 10px;
   position: relative;
   animation: aparecer 1s ease-in-out forwards;
+  color: #0154bc;
 }
 
 .nav-link {
