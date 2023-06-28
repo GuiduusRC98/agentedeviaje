@@ -46,7 +46,7 @@ ul {
 
 header {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,14 +141,12 @@ nav {
   bottom: 20px;
   left: 0;
   right: 0;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
   color: #fff;
 }
 
-div .caption-content{
-  max-width: 500px;
-  align-items: center;
-  margin: 0px;
-}
 
 .caption-content {
   display: flex;
