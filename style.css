@@ -185,7 +185,7 @@ nav {
   width: 200px;
   height: auto;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .card-content {
