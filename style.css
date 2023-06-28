@@ -93,6 +93,7 @@ header {
   font-size: 24px;
   margin-bottom: 5px;
 }
+
 .nav-item::after {
   content: "";
   position: absolute;
