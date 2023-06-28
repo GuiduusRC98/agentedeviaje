@@ -87,7 +87,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #0154bc;
 }
 
 .nav-link i {
@@ -103,7 +103,7 @@ header {
   transform: translateY(-50%);
   height: 20px;
   width: 1px;
-  background-color: #0154bc;
+  background-color: white;
 }
 
 .nav-item:last-child::after {
