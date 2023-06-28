@@ -96,8 +96,18 @@ nav {
   color: #333;
 }
 
-.nav-link i {
+.nav-link img{
   font-size: 24px;
+  max-width: 35px;
+  max-height: 24px;
+  margin-bottom: 5px;
+  color: #0154bc;
+}
+
+.nav-link i{
+  font-size: 24px;
+  max-width: 35px;
+  max-height: 24px;
   margin-bottom: 5px;
   color: #0154bc;
 }
@@ -116,6 +126,11 @@ nav {
 .nav-item:last-child::after {
   display: none;
 }
+
+.nav-link:hover {
+  transform: translateY(-8px);
+}
+
 
 .carousel-item {
   position: relative;
@@ -146,7 +161,6 @@ nav {
   padding: 0px;
   color: #fff;
 }
-
 
 .caption-content {
   display: flex;
@@ -192,7 +206,7 @@ nav {
   margin-top: 10px;
 }
 
-.titulo_servicio{
+.titulo_servicio {
   font-size: 50px;
   margin: 10px;
   padding: 10px;
