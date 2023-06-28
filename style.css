@@ -79,6 +79,7 @@ header {
 .nav-item {
   margin: 0 10px;
   position: relative;
+  animation: aparecer 1s ease-in-out forwards;
 }
 
 .nav-link {
@@ -94,6 +95,10 @@ header {
   margin-bottom: 5px;
 }
 
+.nav-link::before {
+  background-color: #4f91e0;
+}
+
 .nav-item::after {
   content: "";
   position: absolute;
@@ -102,7 +107,7 @@ header {
   transform: translateY(-50%);
   height: 20px;
   width: 1px;
-  background-color: #999;
+  background-color: #0154bc;
 }
 
 .nav-item:last-child::after {
