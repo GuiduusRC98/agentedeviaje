@@ -146,6 +146,8 @@ nav {
 
 div .caption-content{
   max-width: 500px;
+  align-items: center;
+  margin: 0px;
 }
 
 .caption-content {
