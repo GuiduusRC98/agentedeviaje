@@ -93,6 +93,7 @@ nav {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  color: #333;
 }
 
 .nav-link i {
@@ -108,7 +109,7 @@ nav {
   transform: translateY(-50%);
   height: 20px;
   width: 1px;
-  background-color: rgb(134, 134, 134);
+  background-color: #999;
 }
 
 .nav-item:last-child::after {
