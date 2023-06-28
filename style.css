@@ -173,8 +173,8 @@ nav {
   width: 300px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   text-align: center;
 }
 
@@ -182,25 +182,13 @@ nav {
   width: 200px;
   height: auto;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .card-content {
   margin-top: 10px;
 }
 
-h3 {
-  font-size: 18px;
-}
-
-p {
-  font-size: 14px;
-}
-
-strong {
-  font-size: 24px;
-  color: rgb(74, 189, 228);
-}
 
 /* Estilos para la animación */
 .animate__animated {
