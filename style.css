@@ -99,6 +99,7 @@ nav {
 .nav-link i {
   font-size: 24px;
   margin-bottom: 5px;
+  color: #0154bc;
 }
 
 .nav-item::after {
@@ -143,13 +144,16 @@ nav {
   color: #fff;
 }
 
+div .caption-content{
+  max-width: 500px;
+}
+
 .caption-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  max-width: 500px;
 }
 
 .caption-content h3 {
