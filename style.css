@@ -55,12 +55,12 @@ header {
   justify-content: center;
   background-color: #0154bc;
   height: 48px;
-  animation: aparecer 1s ease-in-out forwards;
 }
 
 .logo img {
   width: 100px;
   height: auto; /* Para mantener la proporción de la imagen */
+  animation: aparecer 1s ease-in-out forwards;
 }
 
 .navbarGabita {
