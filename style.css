@@ -254,23 +254,18 @@ nav {
   background-color: #0154bc;
 }
 
-.Bitcoin {
-  position: relative;
+.Bitcoin i {
   display: inline-block;
-}
-
-.Bitcoin::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-color: 0154bc;
   width: 35px;
   height: 35px;
-  background-color: #0154bc;
   border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 5px;
 }
 
-.Bitcoin img {
+.Bitcoin i img {
   filter: invert(100%);
 }
 
