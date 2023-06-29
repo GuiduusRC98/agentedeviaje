@@ -198,7 +198,6 @@ Currency {
 }
 
 .Currency .three-box {
-  border-top: #0154bc solid 2px;
   text-align: center;
 }
 
@@ -208,6 +207,7 @@ Currency {
 
 .Currency .three-box figure img {
   width: 100%;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .Currency .three-box .Bitcoin {
