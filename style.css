@@ -254,6 +254,26 @@ nav {
   background-color: #0154bc;
 }
 
+.Bitcoin {
+  position: relative;
+  display: inline-block;
+}
+
+.Bitcoin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.Bitcoin img {
+  filter: invert(100%);
+}
+
 /* SERVICIOS */
 .layout_padding {
   padding-top: 90px;
