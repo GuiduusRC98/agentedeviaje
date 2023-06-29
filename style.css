@@ -191,10 +191,6 @@ nav {
   color: #080404;
 }
 
-.cur {
-  color: #0154bc;
-  font-weight: 500;
-}
 
 .Currency .three-box {
   text-align: center;
@@ -206,6 +202,7 @@ nav {
 
 .Currency .three-box figure img {
   width: 100%;
+  max-width: 280px;
   border-radius: 5px 5px 5px 5px;
 }
 
