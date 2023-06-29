@@ -223,6 +223,7 @@ nav {
 
 .Currency .three-box .Bitcoin i img {
   margin-top: -36px;
+  filter: invert(100%);
 }
 
 .Currency .three-box .Bitcoin p {
@@ -254,7 +255,7 @@ nav {
   background-color: #0154bc;
 }
 
-div .Bitcoin i {
+div .Bitcoin {
   display: inline-block;
   background-color: #0154bc;
   width: 35px;
@@ -265,10 +266,6 @@ div .Bitcoin i {
   margin-right: 5px;
 }
 
-.Bitcoin i img {
-  filter: invert(100%);
-  background-color: white;
-}
 
 /* SERVICIOS */
 .layout_padding {
