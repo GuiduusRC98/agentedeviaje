@@ -193,12 +193,12 @@ nav {
 }
 
 .cur {
-  color: #ad2100;
+  color: #0154bc;
   font-weight: 500;
 }
 
 .Currency .three-box {
-  border-top: #ff0000 solid 2px;
+  border-top: #0154bc solid 2px;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ nav {
 }
 
 .Currency .three-box .read-more:hover {
-  background-color: #ad2100;
+  background-color: #0154bc;
 }
 
 /* SERVICIOS */
