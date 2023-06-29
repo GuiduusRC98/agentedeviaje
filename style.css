@@ -259,14 +259,14 @@ nav {
   display: inline-block;
 }
 
-.Bitcoin::before {
+.Bitcoin::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 35px;
   height: 35px;
-  background-color: blue;
+  background-color: #0154bc;
   border-radius: 50%;
 }
 
