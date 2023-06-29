@@ -209,11 +209,12 @@ nav {
   border-radius: 5px 5px 5px 5px;
 }
 
-.Currency .three-box .Bitcoin {
+.three-box .Bitcoin {
   position: relative;
   margin-top: -60px !important;
   text-align: center;
   box-shadow: #ddd 0px 1px 1px 1px;
+  background-color: #fff;
   padding: 0px 20px 26px 20px;
   margin: 0 auto;
   width: 310px;
