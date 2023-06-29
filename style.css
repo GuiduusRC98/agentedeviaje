@@ -175,7 +175,7 @@ nav {
 }
 
 /* promos nuevas */
-.Currency {
+Currency {
   background-color: #fff;
   padding: 90px 0px;
 }
@@ -254,30 +254,6 @@ nav {
 .Currency .three-box .read-more:hover {
   background-color: #0154bc;
 }
-
-/* Agregar círculo alrededor del icono */
-.Currency .three-box .Bitcoin i {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #ccc;
-  transition: background-color 0.3s ease;
-}
-
-.Currency .three-box .Bitcoin:hover i {
-  background-color: #0154bc;
-  /* Cambia el color que desees */
-}
-
-.Currency .three-box .Bitcoin i img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 /* SERVICIOS */
 .layout_padding {
