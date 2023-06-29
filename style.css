@@ -174,45 +174,176 @@ nav {
   color: white;
 }
 
-.caption-content a.btn {
-  margin-bottom: 150px;
+/* promos nuevas */
+.Currency {
+  background-color: #fff;
+  padding: 90px 0px;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+.Currency .titlepage {
   text-align: center;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: fadeInUp;
+  padding-bottom: 65px;
 }
 
-.rounded-image {
-  width: 200px;
-  height: auto;
+.Currency .titlepage h2 {
+  font-weight: 500;
+  line-height: 72px;
+  font-size: 40px;
+  color: #080404;
+}
+
+.cur {
+  color: #ad2100;
+  font-weight: 500;
+}
+
+.Currency .three-box {
+  border-top: #ff0000 solid 2px;
+  text-align: center;
+}
+
+.Currency .three-box figure {
+  margin: 0px;
+}
+
+.Currency .three-box figure img {
+  width: 100%;
+}
+
+.Currency .three-box .Bitcoin {
+  position: relative;
+  margin-top: -60px !important;
+  text-align: center;
+  box-shadow: #ddd 0px 1px 1px 1px;
+  background-color: #fff;
+  padding: 0px 20px 26px 20px;
   margin: 0 auto;
-  border-radius: 5px;
+  width: 310px;
 }
 
-.card-content {
-  margin-top: 10px;
+.Currency .three-box .Bitcoin i img {
+  margin-top: -36px;
 }
 
-.titulo_servicio {
-  font-size: 50px;
-  margin: 10px;
-  padding: 10px;
+.Currency .three-box .Bitcoin p {
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #3e3c3c;
+}
+
+.Currency .three-box .Bitcoin h3 {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.Currency .three-box .read-more {
+  padding: 11px 20px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin-top: 26px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.Currency .three-box .read-more:hover {
+  background-color: #ad2100;
+}
+
+/* SERVICIOS */
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 0px;
+}
+
+.images_2 {
+  width: 100%;
+  float: left;
   text-align: center;
-  color: rgb(47, 179, 223);
 }
+
+.images_2 img {
+  object-fit: cover;
+  max-width: 343px;
+  max-height: 279px;
+}
+
+.ride_section {
+  width: 100%;
+  float: left;
+}
+
+.ride_text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #2b3436;
+  font-size: 50px;
+  margin-left: 0px;
+  border-bottom: 1px solid #000;
+}
+
+.ride_main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ride_section_2 {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+
+.image_3 {
+  width: 100%;
+  float: left;
+}
+
+.image_3 img {
+  object-fit: cover;
+  max-width: 343px;
+  max-height: 279px;
+}
+
+.cabe_text {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #2b3436;
+  margin-top: 20px;
+}
+
+.long_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #2b3436;
+  margin-left: 0px;
+}
+
+.secure_text {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #2b3436;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.long_text_2 {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #2b3436;
+  margin-left: 0px;
+  text-align: right;
+}
+
 
 /* Estilos para la animación */
 .animate__animated {
