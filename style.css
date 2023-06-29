@@ -254,9 +254,9 @@ nav {
   background-color: #0154bc;
 }
 
-.Bitcoin i {
+div .Bitcoin i {
   display: inline-block;
-  background-color: 0154bc;
+  background-color: #0154bc;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -267,6 +267,7 @@ nav {
 
 .Bitcoin i img {
   filter: invert(100%);
+  background-color: white;
 }
 
 /* SERVICIOS */
