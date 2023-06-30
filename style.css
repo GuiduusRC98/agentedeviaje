@@ -461,6 +461,9 @@ nav {
   background: #0056b3;
 }
 
+.row {
+  align-items: center;
+}
 .recuadro-servicios p{
   color: white;
 }
