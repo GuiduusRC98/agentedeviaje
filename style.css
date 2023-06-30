@@ -436,7 +436,7 @@ nav {
 }
 
 .servicios,
-.container-servicios{
+.container-servicios {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -470,8 +470,20 @@ nav {
   align-items: center;
   justify-content: center;
   border-radius: 45px;
-  color: #33211D;
-  background: #DA9F5B;
+  color: white;
+  background: #0056b3;
+}
+
+.recuadro-servicios {
+  position: relative;
+  margin-top: -60px !important;
+  text-align: center;
+  box-shadow: #ddd 0px 1px 1px 1px;
+  background-color: #90c1f5;
+  padding: 0px 20px 26px 20px;
+  margin: 0 auto;
+  width: 310px;
+
 }
 
 /* Estilos del pie de página */
