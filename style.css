@@ -430,9 +430,15 @@ nav {
 }
 
 .img-fluid {
-  max-width: 195px;
-  max-height: 195px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+.section-service {
+  position: relative;
+  padding: 115px 0 35px 0;
+  text-align: center;
 }
 
 .section-service::after {
