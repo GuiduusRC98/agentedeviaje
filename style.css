@@ -428,7 +428,7 @@ nav {
 .boton:hover {
   background-color: #0056b3;
 }
-
+/* servicios */
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -437,6 +437,9 @@ nav {
 
 .servicios,
 .container-servicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
