@@ -461,30 +461,20 @@ nav {
   background: #0056b3;
 }
 
-.service-icon {
-  margin-right: 15px;
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  color: white;
-  background: #0056b3;
-}
 
 .recuadro-servicios {
-  position: relative;
-  margin-top: -60px !important;
-  text-align: center;
-  box-shadow: #ddd 0px 1px 1px 1px;
-  background-color: #90c1f5;
-  padding: 0px 20px 26px 20px;
-  margin: 0 auto;
-  width: 310px;
-
+  background-color: lightblue;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
 }
+
+.service-icon {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 
 /* Estilos del pie de página */
 footer {
