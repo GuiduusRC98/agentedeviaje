@@ -463,13 +463,15 @@ nav {
 
 .recuadro-servicios p{
   color: white;
+  font-size: 55px;
+  font-weight: 650;
 }
 
 .recuadro-servicios {
-  background-color: #4054B2;
+  background-color: #273572;
   color: white;
   padding: 50px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .service-icon {
