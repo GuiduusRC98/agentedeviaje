@@ -461,11 +461,14 @@ nav {
   background: #0056b3;
 }
 
+.recuadro-servicios p{
+  color: white;
+}
 
 .recuadro-servicios {
-  background-color: lightblue;
+  background-color: #4054B2;
   color: white;
-  padding: 20px;
+  padding: 50px;
   border-radius: 5px;
 }
 
