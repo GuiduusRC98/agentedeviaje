@@ -448,6 +448,7 @@ nav {
   position: relative;
   padding: 115px 0 35px 0;
   text-align: center;
+
 }
 
 .section-service::after {
@@ -461,10 +462,7 @@ nav {
   background: #0056b3;
 }
 
-.row .informacion-servicios{
-  align-items: center;
-}
-.recuadro-servicios p{
+.recuadro-servicios p {
   color: white;
 }
 
@@ -474,6 +472,8 @@ nav {
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
 }
 
 .service-icon {
