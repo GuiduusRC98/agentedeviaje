@@ -482,8 +482,6 @@ nav {
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
 }
 
 .service-icon {
