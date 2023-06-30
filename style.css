@@ -428,37 +428,14 @@ nav {
 .boton:hover {
   background-color: #0056b3;
 }
-/* servicios */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
-.servicios,
-.container-servicios {
-  position: relative;
-  margin-top: -60px !important;
-  text-align: center;
-  box-shadow: #ddd 0px 1px 1px 1px;
-  background-color: #fff;
-  padding: 0px 20px 26px 20px;
-  margin: 0 auto;
-  width: 310px;
-}
+/* servicios */
 
 .section-service {
   position: relative;
   padding: 115px 0 35px 0;
   text-align: center;
 
-}
-
-.box-servicios {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
 }
 
 .section-service::after {
@@ -472,6 +449,20 @@ nav {
   background: #0056b3;
 }
 
+.box-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Divide en dos columnas */
+  grid-gap: 20px;
+  max-width: 70%;
+  max-height: 40%;
+  justify-self: center;
+}
+
+.left {
+  margin-left: 250px;
+}
+
 .recuadro-servicios p {
   color: white;
 }
@@ -479,17 +470,17 @@ nav {
 .recuadro-servicios {
   background: linear-gradient(to bottom, #273572, #5669b6);
   color: white;
-  padding: 50px;
+  padding: 35px;
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
-.service-icon {
-  color: white;
-  font-size: 24px;
-  margin-right: 10px;
-}
 
+.service-icon {
+  filter: brightness(0) invert(1);
+  font-size: 24px;
+  margin-right: 20px;
+}
 
 /* Estilos del pie de página */
 footer {
