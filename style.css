@@ -435,6 +435,15 @@ nav {
   object-fit: cover;
 }
 
+.servicios,
+.container-servicios{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .section-service {
   position: relative;
   padding: 115px 0 35px 0;
