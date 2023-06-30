@@ -455,10 +455,9 @@ nav {
 }
 
 .box-servicios {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .section-service::after {
