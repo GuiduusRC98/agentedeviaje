@@ -495,15 +495,51 @@ footer {
   margin-top: 20px;
 }
 
-.whastapp_logo{
-  display: inline-block;
-  background-color: #25D366;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }
+
+.whatsapp-button a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button a img {
+  width: 100%;
+  height: auto;
+}
+
+.whatsapp-button a:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 50%;
+  right: calc(100% + 10px);
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.whatsapp-button:hover .whatsapp-tooltip {
+  opacity: 1;
+}
+
 
 /* Testimonios */
 /**
