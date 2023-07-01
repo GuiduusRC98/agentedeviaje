@@ -495,7 +495,15 @@ footer {
   margin-top: 20px;
 }
 
-
+.whastapp_logo{
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
 
 /* Testimonios */
 /**
