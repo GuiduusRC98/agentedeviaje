@@ -514,8 +514,8 @@ footer {
 }
 
 .whatsapp-button a img {
-  width: 100%;
-  height: auto;
+  width: 56px;
+  height: 56px;
 }
 
 .whatsapp-button a:hover {
