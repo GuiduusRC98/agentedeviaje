@@ -516,6 +516,7 @@ footer {
 .whatsapp-button a img {
   width: 56px;
   height: 56px;
+  color: white;
 }
 
 .whatsapp-button a:hover {
@@ -534,10 +535,19 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+  transform: translateX(100%);
 }
 
-.whatsapp-button:hover .whatsapp-tooltip {
+.whatsapp-button a:hover .whatsapp-tooltip {
   opacity: 1;
+}
+
+.whatsapp-button a img.whatsapp-icon {
+  fill: #fff; /* Color original del icono */
+}
+
+.whatsapp-button a:hover img.whatsapp-icon {
+  fill: #128C7E; /* Nuevo color del icono al pasar el cursor */
 }
 
 
