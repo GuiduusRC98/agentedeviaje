@@ -256,27 +256,73 @@
     </a>
   </div>
   <!-- Carrusel de testimonio final -->
-
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" required />
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" required></textarea>
-        </div>
-        <button class="boton" type="submit">Enviar</button>
-      </form>
+  <!-- Contacto a whastapp -->
+  <section class="login">
+  
+    <h1 class="form-header">Solicitar informacion</h1>
+    <div class="form-container">
+    <form id="contactForm">
+      <label for="fullName">Nombre completo:</label>
+      <input type="text" id="fullName" name="fullName" required>
+    
+      <label for="country">País de residencia:</label>
+      <input type="text" id="country" name="country" required>
+    
+      <label for="interest">Interés principal:</label>
+      <select id="interest" name="interest" required>
+        <option value="">Seleccione...</option>
+        <option value="ticket">Ticket</option>
+        <option value="hotel">Hotel</option>
+        <option value="promo">Promo</option>
+        <option value="parques">Parques</option>
+      </select>
+    
+      <label for="totalPeople">Cantidad de personas:</label>
+      <input type="number" id="totalPeople" name="totalPeople" required placeholder="Ingrese la cantidad de personas">
+    
+      <label for="totalChildren">Cantidad de menores:</label>
+      <input type="number" id="totalChildren" name="totalChildren" required placeholder="Ingrese la cantidad de menores">
+    
+      <label for="totalAdults">Cantidad de adultos:</label>
+      <input type="number" id="totalAdults" name="totalAdults" required placeholder="Ingrese la cantidad de adultos">
+    
+      <label for="departureDate">Fecha de salida:</label>
+      <input type="date" id="departureDate" name="departureDate" required>
+    
+      <button type="submit">Enviar</button>
+    </form>
     </div>
+  
+
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe automáticamente
+        
+        // Obtiene los valores de los campos del formulario
+        var fullName = document.getElementById("fullName").value;
+        var country = document.getElementById("country").value;
+        var interest = document.getElementById("interest").value;
+        var totalPeople = document.getElementById("totalPeople").value; // Corregido
+        var totalChildren = document.getElementById("totalChildren").value;
+        var totalAdults = document.getElementById("totalAdults").value;
+        var departureDate = document.getElementById("departureDate").value;
+      
+        // Formatea el mensaje con los datos del formulario
+        var formattedMessage = "Hola, soy " + fullName + " de " + country + " y me gustaría saber sobre " + interest + ". Somos " + totalPeople + " personas en total, incluyendo " + totalChildren + " menores y " + totalAdults + " adultos. La fecha de salida es " + departureDate + ".";
+      
+        // Crea la URL de WhatsApp con el mensaje predefinido
+        var whatsappURL = "https://api.whatsapp.com/send?phone=+5493413348425&text=" + encodeURIComponent(formattedMessage);
+      
+        // Abre WhatsApp en una nueva ventana o pestaña
+        window.open(whatsappURL, "_blank");
+      
+        // Puedes mostrar un mensaje de éxito o redireccionar al usuario a otra página
+        alert("¡Mensaje enviado con éxito!");
+        /* window.location.href = "https://www.ejemplo.com/pagina-de-agradecimiento"; */
+      });
+    </script>
   </section>
+  <br>
 
   <footer>
     <div class="container">
