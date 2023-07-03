@@ -416,7 +416,6 @@ nav {
   /* Ajusta la cantidad de elevación según sea necesario */
 }
 
-/* SERVICIOS */
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 0px;
@@ -542,7 +541,6 @@ nav {
 
 /* Estilos del formulario de contacto */
 
-
 .login {
   width: 400px;
   margin: 16px auto;
@@ -551,7 +549,7 @@ nav {
 }
 
 /* Reset top and bottom margins from certain elements */
-.form-header{
+.form-header {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -565,7 +563,6 @@ nav {
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
 
 .form-header {
   text-align: center;
@@ -608,7 +605,6 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
 }
 
 button[type="submit"]:hover {
@@ -620,6 +616,38 @@ button[type="submit"]:hover {
 }
 
 /* servicios */
+@media screen and (min-width: 1200px) {
+  .box-servicios {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .recuadro-servicios {
+    margin-top: 15px;
+  }
+  .about-right {
+    opacity: 0;
+  }
+  .login {
+    margin-top: 25px;
+  }
+
+  footer {
+    opacity: 1;
+    font-size: 10px;
+  }
+  .service-item {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .left {
+    margin-left: 0px;
+  }
+}
 
 .section-service {
   position: relative;
@@ -643,15 +671,12 @@ button[type="submit"]:hover {
   grid-template-columns: 1fr 1fr;
   /* Divide en dos columnas */
   grid-gap: 20px;
-  max-width: 70%;
-  max-height: 40%;
   justify-self: center;
 }
 
-.left {
+/* .left {
   margin-left: 250px;
-}
-
+} */
 .recuadro-servicios p {
   color: white;
 }
@@ -669,13 +694,17 @@ button[type="submit"]:hover {
   font-size: 24px;
   margin-right: 20px;
 }
-
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
+  background-color: #bbd1e9;
   padding: 20px;
+  margin-top: 15px;
   text-align: center;
   color: #fff;
+}
+
+footer div p {
+  color: #000;
 }
 
 .footer-bottom {
@@ -990,4 +1019,120 @@ footer {
 .owl-2-style .owl-dots .owl-dot:active,
 .owl-2-style .owl-dots .owl-dot:focus {
   outline: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Estilos generales */
+body {
+  background: url("img/fondo.jpg") repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.max-inicio {
+  width: 100%;
+  max-height: 528px;
+  object-fit: cover;
+}
+
+h2,
+h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+p {
+  color: #666;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0154bc;
+  height: 48px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  /* Para mantener la proporción de la imagen */
+  animation: aparecer 1s ease-in-out forwards;
+}
+
+.navbarGabita {
+  background-color: white;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  position: relative;
+  animation: aparecer 1s ease-in-out forwards;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link img,
+.nav-link i {
+  font-size: 24px;
+  max-width: 35px;
+  max-height: 24px;
+  margin-bottom: 5px;
+  color: #0154bc;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
 }
