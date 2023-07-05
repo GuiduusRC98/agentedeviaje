@@ -626,32 +626,7 @@ button[type="submit"]:hover {
     margin-right: 250px;
   }
 }
-@media screen and (max-width: 375px) {
-  .recuadro-servicios {
-    margin-top: 15px;
-  }
-  .about-right {
-    opacity: 0;
-  }
-  .login {
-    margin-top: 25px;
-  }
 
-  footer {
-    opacity: 1;
-    font-size: 10px;
-  }
-  .service-item {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: stretch;
-  }
-  .left {
-    margin-left: 0px;
-  }
-}
 @media screen and (max-width: 999px) {
   .recuadro-servicios {
     margin-top: 15px;
