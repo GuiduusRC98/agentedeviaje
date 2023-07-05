@@ -76,67 +76,26 @@ nav {
   padding: 10px;
 }
 
-/* Estilos para el menú hamburguesa */
-.hidden {
-  display: none;
-}
-
-.menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px;
-}
-
-.menu-icon span {
-  background-color: #333;
-  display: block;
-  height: 2px;
-  margin-bottom: 4px;
-  transition: transform 0.3s ease-in-out;
-  width: 24px;
-}
-
-#menu-toggle:checked~.nav-list {
-  display: block;
-}
-
-#menu-toggle:checked~.menu-icon span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-#menu-toggle:checked~.menu-icon span:nth-child(2) {
-  opacity: 0;
-}
-
-#menu-toggle:checked~.menu-icon span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
 .nav-list {
-  display: none;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-item {
-  margin-bottom: 10px;
+  margin: 0 10px;
+  position: relative;
+  animation: aparecer 1s ease-in-out forwards;
 }
 
 .nav-link {
-  color: #333;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
-}
-
-
-.nav-link img {
-  font-size: 24px;
-  max-width: 35px;
-  max-height: 24px;
-  margin-bottom: 5px;
-  color: #0154bc;
+  color: #333;
 }
 
 .nav-link img {
@@ -147,6 +106,13 @@ nav {
   color: #0154bc;
 }
 
+.nav-link img {
+  font-size: 24px;
+  max-width: 35px;
+  max-height: 24px;
+  margin-bottom: 5px;
+  color: #0154bc;
+}
 .nav-link i {
   font-size: 24px;
   max-width: 35px;
@@ -178,7 +144,6 @@ nav {
 .about-wrapper {
   height: 100vh;
 }
-
 .about-left {
   background: #007bff60;
   display: flex;
@@ -187,26 +152,22 @@ nav {
   justify-content: center;
   height: 100vh;
 }
-
-.about-left-content>div {
+.about-left-content > div {
   background: #489efa;
   padding: 4rem 4rem 2.5rem 5rem;
   border-radius: 15px 15px 0px 0px;
   text-align: center;
 }
-
 .about-left-content {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
 }
-
 .about-img img {
   display: block;
   width: 200px;
 }
-
 .about-img {
   width: 200px;
   height: 200px;
@@ -214,7 +175,6 @@ nav {
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
-
 .shadow {
   margin-left: auto;
   margin-right: auto;
@@ -224,7 +184,6 @@ nav {
   position: relative;
   cursor: pointer;
 }
-
 .shadow::after {
   content: "";
   position: absolute;
@@ -239,15 +198,12 @@ nav {
   opacity: 0;
   transition: all 0.6s ease;
 }
-
 .shadow:hover .about-img {
   transform: translateY(-10px);
 }
-
 .shadow:hover::after {
   opacity: 1;
 }
-
 .about-left-content h2 {
   font-size: 2rem;
   margin: 2.2rem 0 0.6rem 0;
@@ -255,14 +211,12 @@ nav {
   padding-bottom: 1rem;
   border-bottom: 2px solid #edffec;
 }
-
 .about-left-content h3 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 5px;
   margin-top: 1.2rem;
 }
-
 .icons {
   background: #fff;
   border-radius: 0px 0px 15px 15px;
@@ -306,25 +260,20 @@ nav {
   padding: 0 5rem;
   text-align: center;
 }
-
 .about-right h1 {
   font-size: 7rem;
   text-transform: uppercase;
 }
-
 .about-right h1 span {
   color: #007bff;
 }
-
 .about-right h2 {
   font-weight: 600;
 }
-
 .about-btns {
   display: flex;
   margin: 2rem 0;
 }
-
 .btn {
   border: none;
   font-size: 0.9rem;
@@ -338,30 +287,25 @@ nav {
   margin: 0 0.5rem;
   cursor: pointer;
 }
-
 .btn.btn-pink {
   background: #007bff;
   color: #fff;
   border-color: #007bff;
   transition: all 0.5s ease-in-out;
 }
-
 .btn.btn-pink:hover {
   background: transparent;
   border-color: #007bff;
   color: #000;
 }
-
 .btn.btn-white {
   transition: all 0.5s ease-in-out;
 }
-
 .btn.btn-white:hover {
   background: #007bff;
   border-color: #007bff;
   color: #fff;
 }
-
 .about-para p {
   font-weight: 300;
   padding: 0.5rem;
@@ -373,11 +317,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .about-left {
     position: relative;
   }
-
   .about-left-content {
     position: absolute;
     right: -50px;
@@ -654,11 +596,9 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .login button[type="submit"] {
   display: block;
-  margin: 20px auto;
-  /* Centrar el botón horizontalmente */
+  margin: 20px auto; /* Centrar el botón horizontalmente */
 }
 
 button[type="submit"] {
@@ -691,11 +631,9 @@ button[type="submit"]:hover {
   .recuadro-servicios {
     margin-top: 15px;
   }
-
   .about-right {
     opacity: 0;
   }
-
   .login {
     margin-top: 25px;
   }
@@ -704,7 +642,6 @@ button[type="submit"]:hover {
     opacity: 1;
     font-size: 10px;
   }
-
   .service-item {
     display: grid;
     grid-template-rows: 1fr;
@@ -712,7 +649,6 @@ button[type="submit"]:hover {
     justify-items: stretch;
     align-items: stretch;
   }
-
   .left {
     margin-left: 0px;
   }
@@ -763,7 +699,6 @@ button[type="submit"]:hover {
   font-size: 24px;
   margin-right: 20px;
 }
-
 /* Estilos del pie de página */
 footer {
   background-color: #bbd1e9;
