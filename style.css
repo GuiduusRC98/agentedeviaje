@@ -317,7 +317,7 @@ nav {
   border: 2px solid #000;
   border-radius: 20px;
   padding: 0.55rem 0;
-  width: 130px;
+  width: 160px;
   font-weight: 600;
   background: transparent;
   margin: 0 0.5rem;
@@ -1131,6 +1131,25 @@ nav {
 }
 
 
-.btn.prev {
-  background-color: #ccc;
+.btn.btn-prev {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-prev:hover {
+  background: transparent;
+  border-color: #007bff;
+  color: #000;
+}
+
+.btn.btn-white {
+  transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-white:hover {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
 }
