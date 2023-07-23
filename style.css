@@ -1154,7 +1154,7 @@ nav {
   font-size: 15px;
   color: #424242;
   height: 125px;
-  overflow-x: auto; /* Mostrar barra de desplazamiento horizontal si el contenido es más ancho que el contenedor */
+  overflow-y: auto;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
