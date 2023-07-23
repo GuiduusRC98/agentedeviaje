@@ -1156,8 +1156,6 @@ nav {
   height: 125px;
   overflow: hidden;
   overflow-y: auto;
-  white-space: nowrap;
-  text-overflow: clip;
 }
 
 .projcard-tagbox {
