@@ -1157,6 +1157,7 @@ nav {
   overflow: hidden;
   overflow-y: auto;
   white-space: nowrap;
+  text-overflow: clip;
 }
 
 .projcard-tagbox {
