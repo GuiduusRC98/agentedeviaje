@@ -1151,14 +1151,11 @@ nav {
 
 .projcard-description {
   z-index: 10;
-  padding: 15px;
+  padding: 35px;
   font-size: 25px;
   color: #424242;
   height: 125px;
   overflow-y: auto;
-}
-.projcard-description p{
-  padding: 3rem;
 }
 .projcard-tagbox {
   position: absolute;
