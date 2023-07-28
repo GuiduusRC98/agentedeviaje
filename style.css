@@ -1160,6 +1160,7 @@ nav {
 .projcard-tagbox {
   z-index:10;
   position: absolute;
+  padding-top: 35px;
   bottom: 3%;
   font-size: 14px;
   cursor: default;
