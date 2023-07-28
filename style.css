@@ -1150,7 +1150,7 @@ nav {
 }
 
 .projcard-description {
-  z-index: 10;
+  z-index: 9;
   padding: 35px;
   font-size: 25px;
   color: #424242;
@@ -1158,8 +1158,8 @@ nav {
   overflow-y: auto;
 }
 .projcard-tagbox {
+  z-index:10;
   position: absolute;
-  padding-top: 15px;
   bottom: 3%;
   font-size: 14px;
   cursor: default;
