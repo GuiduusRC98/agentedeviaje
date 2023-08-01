@@ -110,43 +110,44 @@
         <label for="interest">Tipo de tickets</label>
         <select id="interest" name="interest" required>
           <option value="">Seleccione...</option>
-          <option value="Standar thenme park">Standar thenme park</option>
+          <option value="Standar">Standar</option>
+          <option value="Thenme park">Thenme park</option>
           <option value="Water park and sport">Water park and sport</option>
-          <option value="1 Park per day ticket">1 Park per day ticket</option>
           <option value="Park hopper">Park hopper</option>
           <option value="Park Hopper plus">Park Hopper plus </option>
+          <option value="Special Events Tickets">Special Events Tickets</option>
         </select>
 
         <label for="totalAdults">Adultos (10+)</label>
         <select id="totalAdults" name="totalAdults" required>
           <option value="">Seleccione...</option>
-          <option value="0">Ningún adulto</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
+          <option value="0 Adulto/s">0</option>
+          <option value="1 Adulto">1</option>
+          <option value="2 Adultos">2</option>
+          <option value="3 Adultos">3</option>
+          <option value="4 Adultos">4</option>
+          <option value="5 Adultos">5</option>
+          <option value="6 Adultos">6</option>
+          <option value="7 Adultos">7</option>
+          <option value="8 Adultos">8</option>
+          <option value="9 Adultos">9</option>
+          <option value="10 Adultos">10</option>
         </select>
 
         <label for="totalChildren">Niños (de 3 a 9 años)</label>
         <select id="totalChildren" name="totalChildren" required>
           <option value="">Seleccione...</option>
-          <option value="ningún">Ningún menor</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
+          <option value="ningún menor">Ningún menor</option>
+          <option value="1 menor">1</option>
+          <option value="2 menores">2</option>
+          <option value="3 menores">3</option>
+          <option value="4 menores">4</option>
+          <option value="5 menores">5</option>
+          <option value="6 menores">6</option>
+          <option value="7 menores">7</option>
+          <option value="8 menores">8</option>
+          <option value="9 menores">9</option>
+          <option value="10 menores">10</option>
         </select>
 
 
@@ -164,7 +165,7 @@
         var totalAdults = document.getElementById("totalAdults").value;
 
         // Formatea el mensaje con los datos del formulario
-        var formattedMessage = "Me gustaria una cotizacion de " + interest + ". En total somos " + totalAdults + " Adultos y " + totalChildren + " menor/es .";
+        var formattedMessage = "Me gustaria una cotizacion de " + interest + ". En total somos " + totalAdults + " y " + totalChildren + ".";
 
         // Crea la URL de WhatsApp con el mensaje predefinido
         var whatsappURL = "https://api.whatsapp.com/send?phone=+5493413348425&text=" + encodeURIComponent(formattedMessage);
