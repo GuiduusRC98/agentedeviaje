@@ -1261,9 +1261,9 @@ nav {
   }
 
   .nav-item {
-    margin: 10px 0;
     text-align: center;
   }
+
 
   .nav-item::after {
     display: none;
@@ -1284,6 +1284,9 @@ nav {
 
   .nav-item.active .dropdown-menu {
     display: block;
+  }
+  .projcard-subtitle{
+    display: none;
   }
 }
 
@@ -1342,6 +1345,10 @@ nav {
   .nav-item.active .dropdown-menu {
     display: block;
   }
+  .projcard-subtitle{
+    display: none;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -1350,13 +1357,20 @@ nav {
     margin: 0;
   }
   .btn {
-    margin: -15rem;
+    margin: -19.5rem;
+  }
+  .projcard-bar{
+    display: none;
+  }
+  .projcard-subtitle{
+    display: none;
   }
   .btn-izquierda{
-    margin-left: 11rem;
+    margin-left: 9.5rem;
   }
   .projcard-title{
     font-size: 0.8rem;
+    font-style: oblique;
   }
   .projcard-description {
     display: none;
