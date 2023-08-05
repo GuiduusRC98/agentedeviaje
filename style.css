@@ -1352,12 +1352,8 @@ nav {
 }
 
 @media (max-width: 576px) {
-  .projcard-container {
-    max-width: 100%;
-    margin: 0;
-  }
   .btn {
-    margin: -19.5rem;
+    margin-left: 9.5rem;
   }
   .projcard-bar{
     display: none;
@@ -1368,20 +1364,27 @@ nav {
   .btn-izquierda{
     margin-left: 9.5rem;
   }
-  .projcard-title{
-    font-size: 0.8rem;
-    font-style: oblique;
-  }
+
   .projcard-description {
     display: none;
   }
   .projcard-tag {
     display: none;
   }
+  .projcard:nth-child(1n) .projcard-img {
+    left: initial;
+    right: 0;
+    object-fit: contain;
+  }
+  .projcard-textbox {
+    left: initial;
+    right: 430px;
+  }
 
   .projcard-img {
     height: 200px;
-    max-width: 100%;
+    width: 400px;
+    object-fit: cover;
   }
   .navbarGabita .nav-list {
     display: none;
