@@ -1223,6 +1223,7 @@ nav {
 @media (max-width: 992px) {
   .projcard-container {
     max-width: 600px;
+    
   }
   .projcard-description {
     display: none;
@@ -1287,9 +1288,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .whatsapp-button{
-    display: none;
-  }
   header{
     padding: 0;
   }
@@ -1344,26 +1342,21 @@ nav {
   .nav-item.active .dropdown-menu {
     display: block;
   }
-
-  .projcard-container {
-    max-width: 400px;
-    margin: 30px 0 0 10rem;
-  }
-  .projcard-description {
-    display: none;
-  }
-  .projcard-tag {
-    display: none;
-  }
-  .btn {
-    margin: 0px;
-  }
 }
 
 @media (max-width: 576px) {
   .projcard-container {
     max-width: 100%;
-    padding: 0 20px;
+    margin: 0;
+  }
+  .btn {
+    margin: -15rem;
+  }
+  .btn-izquierda{
+    margin-left: 11rem;
+  }
+  .projcard-title{
+    font-size: 0.8rem;
   }
   .projcard-description {
     display: none;
