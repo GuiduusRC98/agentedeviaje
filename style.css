@@ -1368,6 +1368,10 @@ nav {
   .projcard-description {
     display: none;
   }
+  .projcard-title{
+    position: absolute;
+    z-index: 999;
+  }
   .projcard-tag {
     display: none;
   }
