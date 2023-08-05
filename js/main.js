@@ -1,31 +1,9 @@
-$(function() {
+   // Función para alternar la visualización del menú de navegación cuando se hace clic en el ícono de hamburguesa
+   function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+  }
 
-	if ( $('.owl-2').length > 0 ) {
-        $('.owl-2').owlCarousel({
-            center: false,
-            items: 1,
-            loop: true,
-            stagePadding: 0,
-            margin: 20,
-            smartSpeed: 1000,
-            autoplay: true,
-            nav: true,
-            dots: true,
-            pauseOnHover: false,
-            responsive:{
-                600:{
-                    margin: 20,
-                    nav: true,
-                  items: 2
-                },
-                1000:{
-                    margin: 20,
-                    stagePadding: 0,
-                    nav: true,
-                  items: 3
-                }
-            }
-        });            
-    }
-
-})
+  // Agrega un escuchador de eventos de clic al ícono de hamburguesa para llamar a la función toggleMenu()
+  const hamburgerIcon = document.querySelector('.hamburger');
+  hamburgerIcon.addEventListener('click', toggleMenu);
