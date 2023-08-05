@@ -1356,7 +1356,7 @@ nav {
     max-width: 100%;
     margin: 0;
   }
-  .btn {
+  .btn{
     margin: -19.5rem;
   }
   .projcard-bar{
@@ -1373,6 +1373,10 @@ nav {
     display: none;
   }
   .projcard-tag {
+    display: none;
+  }
+
+  .projcard-title{
     display: none;
   }
 
