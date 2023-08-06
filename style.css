@@ -617,6 +617,8 @@ nav {
 .form-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  background-color: whitesmoke;
 }
 
 label {
@@ -1213,6 +1215,37 @@ nav {
   right: -10px;
   top: 0;
 }
+
+/* tickets */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0154bc;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
 
 @media (max-width: 1200px) {
   .projcard-container {

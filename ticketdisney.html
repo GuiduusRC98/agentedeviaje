@@ -98,17 +98,11 @@
     <div class="form-container">
       <form id="contactForm">
         <label for="cantDias">Cantidad de días</label>
-        <select id="cantDias" name="cantDias" required>
-          <option value="">Seleccione...</option>
-          <option value="3">3 días</option>
-          <option value="4">4 días</option>
-          <option value="5">5 días</option>
-          <option value="6">6 días</option>
-          <option value="7">7 días</option>
-          <option value="8">8 días</option>
-          <option value="9">9 días</option>
-          <option value="10">10 días</option>
-        </select>
+          <div class="quantity-selector">
+            <button type="button" class="quantity-btn" onclick="decreaseValueDias()">-</button>
+            <input type="number" id="cantDias" name="cantDias" min="3" max="10" value="0" required>
+            <button type="button" class="quantity-btn" onclick="increaseValueDias()">+</button>
+          </div>
 
         <label for="interest">Tipo de tickets</label>
         <select id="interest" name="interest" required>
@@ -122,36 +116,18 @@
         </select>
 
         <label for="totalAdults">Adultos (10+)</label>
-        <select id="totalAdults" name="totalAdults" required>
-          <option value="">Seleccione...</option>
-          <option value="0 Adulto/s">0</option>
-          <option value="1 Adulto">1</option>
-          <option value="2 Adultos">2</option>
-          <option value="3 Adultos">3</option>
-          <option value="4 Adultos">4</option>
-          <option value="5 Adultos">5</option>
-          <option value="6 Adultos">6</option>
-          <option value="7 Adultos">7</option>
-          <option value="8 Adultos">8</option>
-          <option value="9 Adultos">9</option>
-          <option value="10 Adultos">10</option>
-        </select>
-
+          <div class="quantity-selector">
+            <button type="button" class="quantity-btn" onclick="decreaseValueAdult()">-</button>
+            <input type="number" id="totalAdults" name="totalAdults" min="0" max="10" value="0" required>
+            <button type="button" class="quantity-btn" onclick="increaseValueAdult()">+</button>
+          </div>
+          <br>
         <label for="totalChildren">Niños (de 3 a 9 años)</label>
-        <select id="totalChildren" name="totalChildren" required>
-          <option value="">Seleccione...</option>
-          <option value="ningún menor">Ningún menor</option>
-          <option value="1 menor">1</option>
-          <option value="2 menores">2</option>
-          <option value="3 menores">3</option>
-          <option value="4 menores">4</option>
-          <option value="5 menores">5</option>
-          <option value="6 menores">6</option>
-          <option value="7 menores">7</option>
-          <option value="8 menores">8</option>
-          <option value="9 menores">9</option>
-          <option value="10 menores">10</option>
-        </select>
+        <div class="quantity-selector">
+          <button type="button" class="quantity-btn" onclick="decreaseValue()">-</button>
+          <input type="number" id="totalChildren" name="totalChildren" min="0" max="10" value="0" required>
+          <button type="button" class="quantity-btn" onclick="increaseValue()">+</button>
+        </div>
 
 
         <button type="submit">Enviar</button>
