@@ -1399,6 +1399,45 @@ select{
 
 }
 
+.tickets-general {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tickets {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #273572, #5669b6);
+  color: white;
+  max-width: 750px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.tickets-especial {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #ceb548, #725a27);
+  color: white;
+  max-width: 750px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.tickets h3, p{
+  color: #fff;
+}
+.tickets .ticket-parrafo{
+  margin-top: 20px;
+  line-height: 1.5;
+}
 
 @media (max-width: 1200px) {
   .projcard-container {
