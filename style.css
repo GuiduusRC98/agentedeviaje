@@ -627,8 +627,13 @@ label {
   color: #333;
   margin-bottom: 5px;
 }
-
-input,
+.login input[type="text"]{
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 select {
   width: 100%;
   padding: 8px;
@@ -636,7 +641,9 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+.login input[type="date"]{
+  width: 150px;
+}
 .login button[type="submit"] {
   display: block;
   margin: 20px auto;
@@ -1255,6 +1262,12 @@ select{
   .projcard-container {
     max-width: 800px;
   }
+  .three-box {
+    margin-top: 1em;
+  }
+  .Currency a{
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1325,6 +1338,12 @@ select{
   .projcard-subtitle{
     display: none;
   }
+  .three-box {
+    margin-top: 1em;
+  }
+  .Currency a{
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1385,15 +1404,28 @@ select{
   .projcard-subtitle{
     display: none;
   }
-
+  .three-box {
+    margin-top: 1em;
+  }
+  .Currency a{
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 576px) {
-  .Currency .titlepage h2 {
-    line-height: 72px;
+  .Currency .titlepage h2{
+    line-height: 50px;
     color: #539df8;
     font-size: 35px;
     font-weight: 650;
+    margin-left: -75px;
+  }
+  .Currency a{
+    text-decoration: none;
+  }
+  .three-box {
+    margin-left: -0.8em;
+    margin-top: 1em;
   }
   .projcard-container {
     max-width: 100%;
