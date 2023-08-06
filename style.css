@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 /* Estilos generales */
 
 body {
@@ -11,11 +11,11 @@ body {
   background-color: #f8f8f8;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px;
-}
+} */
 
 .max-inicio {
   width: 100%;
@@ -385,6 +385,7 @@ nav {
 
 .Currency {
   padding: 90px;
+  margin-left: 120px;
 }
 
 .Currency .titlepage {
@@ -397,6 +398,9 @@ nav {
   color: #539df8;
   font-size: 55px;
   font-weight: 650;
+}
+.Currency a{
+  text-decoration: none;
 }
 
 .Currency .three-box {
@@ -668,6 +672,43 @@ button[type="submit"]:hover {
   color: #999;
 }
 
+.propaganda{
+  background-image: url(img/castillo_disney_propaganda.jpg);
+  border-radius: 20px 20px 20px 20px ;
+  width: 1250px;
+  height: 200px;
+  margin-left: 50px;
+  object-fit: cover;
+}
+.propaganda h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  margin-left: 55px;
+  font-style: oblique;
+  padding-top: 40px;
+  color: #fff;
+}
+.propaganda p{
+  margin-left: 55px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  color: #fff;
+}
+
+.whatsapp-propaganda{
+  margin-left: 500px;
+  background-color: #25d366;
+  color: white;
+  border: transparent;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.whatsapp-propaganda:hover{
+  background-color: #128c7e;
+  color: #fff;
+}
 /* servicios */
 @media screen and (min-width: 1200px) {
   .box-servicios {
@@ -732,9 +773,6 @@ button[type="submit"]:hover {
   justify-self: center;
 }
 
-/* .left {
-  margin-left: 250px;
-} */
 .recuadro-servicios p {
   color: white;
 }
@@ -1344,6 +1382,14 @@ select{
   .Currency a{
     text-decoration: none;
   }
+  .propaganda{
+    width: 750px;
+    height: 200px;
+    margin-left: 30px;
+  }
+  .whatsapp-propaganda{
+    margin-left: 250px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1410,9 +1456,26 @@ select{
   .Currency a{
     text-decoration: none;
   }
+  .propaganda{
+    width: 630px;
+    height: 200px;
+    margin-left: 20px;
+    
+  }
+  .whatsapp-propaganda{
+    margin-left: 200px;
+  }
 }
 
 @media (max-width: 576px) {
+  .propaganda{
+    width: 470px;
+    height: 200px;
+    margin-left: 10px;
+  }
+  .whatsapp-propaganda{
+    margin-left: 120px;
+  }
   .Currency .titlepage h2{
     line-height: 50px;
     color: #539df8;
