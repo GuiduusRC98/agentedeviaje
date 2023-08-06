@@ -1599,3 +1599,23 @@ select{
     margin-left: 5px;
   }
 }
+
+@media (max-width: 360px) {
+  .propaganda{
+    width: 360px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .propaganda p{
+    display: none;
+  }
+  .propaganda h3{
+    margin-left: 10px
+  }
+  .whatsapp-propaganda{
+    margin-left: 55px;
+  }
+  .Currency{
+    margin-left: 5px;
+  }
+}
