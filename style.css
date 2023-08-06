@@ -730,11 +730,6 @@ button[type="submit"]:hover {
     margin-top: 25px;
   }
 
-  footer {
-    opacity: 1;
-    font-size: 10px;
-  }
-
   .service-item {
     display: grid;
     grid-template-rows: 1fr;
@@ -1605,11 +1600,17 @@ select{
     margin-left: 20px;
     
   }
+  .tickets{
+    max-width: 630px;
+  }
   .whatsapp-propaganda{
     margin-left: 200px;
   }
   .Currency{
     margin-left: 50px;
+  }
+  .footer-logo{
+    display: none;
   }
 }
 
@@ -1618,6 +1619,9 @@ select{
     width: 470px;
     height: 200px;
     margin-left: 10px;
+  }
+  .tickets{
+    max-width: 470px;
   }
   .whatsapp-propaganda{
     margin-left: 120px;
@@ -1729,6 +1733,9 @@ select{
     height: 150px;
     margin-left: 50px;
   }
+  .tickets{
+    max-width: 360px;
+  }
   .propaganda p{
     display: none;
   }
@@ -1741,6 +1748,9 @@ select{
   .Currency{
     margin-left: 5px;
   }
+  .footer-logo{
+    display: none;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1748,6 +1758,9 @@ select{
     width: 360px;
     height: 150px;
     margin-left: 20px;
+  }
+  .tickets{
+    max-width: 360px;
   }
   .propaganda p{
     display: none;
