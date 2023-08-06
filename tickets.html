@@ -35,11 +35,16 @@
             <span>Cruceros</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="tickets.html" class="nav-link">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
             <img src="img/ticket.svg" alt="ticket" width="35px" height="24px">
             <span>Tickets</span>
           </a>
+          <ul class="dropdown-menu">
+            <li><a href="ticketuniversal.html">Tickets Universal</a></li>
+            <li><a href="ticketdisney.html">Tickets Disney</a></li>
+            <li><a href="otrostickets.html">Otros tickets</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="disney.html" class="nav-link">
@@ -78,6 +83,57 @@
       </ul>
     </nav>
   </header>
+  <div class="Currency">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2 class="cur">TICKETS</h2>
+            <!--             <span><img src="img/boder.png" alt="img" /> </span> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <a class="read-more" href="ticketuniversal.html">
+            <div class="three-box">
+              <figure><img src="img/disney_parque.jpeg" alt="img" /></figure>
+              <div class="promo"> <i><img src="img/icon_disney.png" alt="img" width="50px" height="50px" /></i>
+                <h3>Tickets Disney</h3>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <a class="read-more"
+          href="ticketuniversal.html">
+          <div class="three-box">
+            <figure><img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/109654977.jpg?k=0f38526abd5ac9b9bd65da4c895cf9132e4f871094e646b3ebb926fab6dcb800&o=&hp=1"
+                alt="img" /></figure>
+            <div class="promo"> <i><img src="img/icon_universal.png" alt="img" width="50px" height="50px" /></i>
+              <!-- aqui usar logo dependiendo de que es la promo -->
+              <h3>Tickets Universal</h3>
+            </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+      <a class="read-more"
+      href="otrostickets.html">
+        <div class="three-box">
+          <figure><img
+              src="https://www.egames.news/__export/1686854124794/sites/debate/img/2023/06/15/the-last-of-us-universal-studios-halloween-horror-nights-octubre-2023.jpg_1902800913.jpg"
+              alt="img" /></figure>
+          <div class="promo"> <i><img src="img/icon_universal.png" alt="img" width="50px" height="50px" /></i>
+            <h3>Otros Tickets</h3>
+          </div>
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
   <div class="whatsapp-button">
@@ -87,72 +143,7 @@
     </a>
   </div>
   <br>
-  <!-- Contacto a whastapp -->
-  <section class="login">
-    
-    <div class="form-container">
-      <form id="contactForm">
-        <label for="cantDias">Cantidad de días</label>
-          <div class="quantity-selector">
-            <button type="button" class="quantity-btn" onclick="decreaseValueDias()">-</button>
-            <input type="number" id="cantDias" name="cantDias" min="3" max="10" value="3" required>
-            <button type="button" class="quantity-btn" onclick="increaseValueDias()">+</button>
-          </div>
 
-        <label for="interest">Tipo de tickets</label>
-        <select id="interest" name="interest" required>
-          <option value="">Seleccione...</option>
-          <option value="Standard">Standard</option>
-          <option value="Water park and sport">Water park and sport</option>
-          <option value="Park hopper">Park hopper</option>
-          <option value="Park Hopper plus">Park Hopper plus </option>
-          <option value="Special Events Tickets">Special Events Tickets</option>
-        </select>
-
-        <label for="totalAdults">Adultos (10+)</label>
-          <div class="quantity-selector">
-            <button type="button" class="quantity-btn" onclick="decreaseValueAdult()">-</button>
-            <input type="number" id="totalAdults" name="totalAdults" min="0" max="10" value="0" required>
-            <button type="button" class="quantity-btn" onclick="increaseValueAdult()">+</button>
-          </div>
-          <br>
-        <label for="totalChildren">Niños (de 3 a 9 años)</label>
-        <div class="quantity-selector">
-          <button type="button" class="quantity-btn" onclick="decreaseValue()">-</button>
-          <input type="number" id="totalChildren" name="totalChildren" min="0" max="10" value="0" required>
-          <button type="button" class="quantity-btn" onclick="increaseValue()">+</button>
-        </div>
-
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-        // Obtiene los valores de los campos del formulario
-        var cantDias = document.getElementById("cantDias").value;
-        var interest = document.getElementById("interest").value;
-        var totalChildren = document.getElementById("totalChildren").value;
-        var totalAdults = document.getElementById("totalAdults").value;
-
-        // Formatea el mensaje con los datos del formulario
-        var formattedMessage = "Hola! Me gustaria una cotizacion de tickets " + interest + " para " + cantDias +  " dias. En total somos " + totalAdults + " adultos  y " + totalChildren + " niños.";
-
-        // Crea la URL de WhatsApp con el mensaje predefinido
-        var whatsappURL = "https://api.whatsapp.com/send?phone=+5493413348425&text=" + encodeURIComponent(formattedMessage);
-
-        // Abre WhatsApp en una nueva ventana o pestaña
-        window.open(whatsappURL, "_blank");
-        // Puedes mostrar un mensaje de éxito o redireccionar al usuario a otra página
-        alert("¡Mensaje enviado con éxito!");
-        contactForm.reset();
-        /* window.location.href = "https://www.ejemplo.com/pagina-de-agradecimiento"; */
-      });
-    </script>
-  </section>
 
   <br>
 
