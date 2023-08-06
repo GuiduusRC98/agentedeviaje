@@ -273,10 +273,16 @@
     </div>
     <div class="propaganda">
       <h3 class="propaganda-titulo">Empezá a soñar tu viaje</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum debitis deserunt eveniet amet beatae molestiae velit, minus consequatur aut</p>
-      <a href=""><button class="whatsapp-propaganda"><i class="fab fa-whatsapp"></i>  Contactame Ya por Whatsapp</button></a>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum debitis
+        deserunt eveniet amet beatae molestiae velit, minus consequatur aut
+      </p>
+      <a href=""
+        ><button class="whatsapp-propaganda">
+          <i class="fab fa-whatsapp"></i> Contactame Ya por Whatsapp
+        </button></a
+      >
     </div>
-    
 
     <div id="servicios" class="pt-5">
       <div class="servicios">
@@ -397,17 +403,57 @@
 
           <label for="totalAdults">Adultos (10+)</label>
           <div class="quantity-selector">
-            <button type="button" class="quantity-btn" onclick="decreaseValueAdult()">-</button>
-            <input type="number" id="totalAdults" name="totalAdults" min="0" max="10" value="0" required>
-            <button type="button" class="quantity-btn" onclick="increaseValueAdult()">+</button>
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="decreaseValueAdult()"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="totalAdults"
+              name="totalAdults"
+              min="0"
+              max="10"
+              value="0"
+              required
+            />
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="increaseValueAdult()"
+            >
+              +
+            </button>
           </div>
-          <br>
-        <label for="totalChildren">Niños (de 3 a 9 años)</label>
-        <div class="quantity-selector">
-          <button type="button" class="quantity-btn" onclick="decreaseValue()">-</button>
-          <input type="number" id="totalChildren" name="totalChildren" min="0" max="10" value="0" required>
-          <button type="button" class="quantity-btn" onclick="increaseValue()">+</button>
-        </div>
+          <br />
+          <label for="totalChildren">Niños (de 3 a 9 años)</label>
+          <div class="quantity-selector">
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="decreaseValue()"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="totalChildren"
+              name="totalChildren"
+              min="0"
+              max="10"
+              value="0"
+              required
+            />
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="increaseValue()"
+            >
+              +
+            </button>
+          </div>
 
           <label for="departureDate">Fecha de check-in aproximada:</label>
           <input type="date" id="departureDate" name="departureDate" required />
@@ -466,15 +512,37 @@
 
     <br />
 
-    <footer>
+    <footer class="footer">
       <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/logo_web.png" alt="Logo" />
+          </div>
+          <div class="footer-info">
+            <h3>Contacto</h3>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>   Rosario, Santa Fe, Argentina</p>
+            <p><i class="fab fa-whatsapp"></i>   +54 9 3416 48-3029</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>   gabriela.h@mhtravelagency.com</p>
+          </div>
+          <div class="footer-social">
+            <h3>Redes Sociales</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i>  @gabitatravelplanner</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i>  @gabita.travelplanner</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
         <p>
           7380 W Sand Lake Rd Ste 500 Orlando, Florida 32819-5257 Estados Unidos
         </p>
         <p>
-          Todas las marcas tienen sus derechos reservados y se reproducen en el
-          sitio al solo fin editorial, igualmente aplicable a las imágenes
-          usadas en el sitio.
+          Magic Holidays Travel Agency es una web on line no oficial para los destinos Orlando y Walt Disney World Resort.
         </p>
         <p>
           Logotipos y propiedades Disney: ©Disney Disney Cruise Line. Barcos

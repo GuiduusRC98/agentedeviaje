@@ -792,21 +792,125 @@ button[type="submit"]:hover {
 }
 
 /* Estilos del pie de página */
-footer {
-  background-color: #bbd1e9;
+.copy {
+  background-color: #013369;
   padding: 20px;
   margin-top: 15px;
   text-align: center;
+}
+
+.copy p {
+  color: #fff;
+  font-size: 8px;
+}
+
+.copy-bottom {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #0056b3;
+  padding: 10px 0;
+  
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   color: #fff;
 }
 
-footer div p {
-  color: #000;
+.footer .footer-logo img {
+  width: 150px;
+  height: auto;
 }
 
-.footer-bottom {
-  margin-top: 20px;
+.footer .footer-info {
+  flex: 2;
+  margin: 20px 0;
+  margin-left: 120px;
+  padding-left: 10px;
 }
+
+.footer .footer-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.footer .footer-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer .footer-social {
+  flex: 2;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.footer .footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.footer .footer-social .social-links i {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.social-links li {
+  list-style: none;
+  line-height: 2.1;
+}
+
+.footer .footer-social .social-links i li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer .footer-social .social-links i a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+.footer .footer-social .social-links a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer .footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer .footer-bottom p {
+  font-size: 14px;
+  color: #fff;
+}
+
 
 /* Boton whatsapp */
 
