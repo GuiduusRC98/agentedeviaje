@@ -602,6 +602,7 @@ nav {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
+  background-color: antiquewhite;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -618,7 +619,6 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: whitesmoke;
 }
 
 label {
@@ -1371,9 +1371,9 @@ input[type="number"] {
     color: #333;
   }
 
-  .nav-item.dropdown:hover .dropdown-menu {
+  /* .nav-item.dropdown:hover .dropdown-menu {
     display: none;
-  }
+  } */
 
   .nav-item.active .dropdown-menu {
     display: block;

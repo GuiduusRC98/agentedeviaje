@@ -107,8 +107,7 @@
         <label for="interest">Tipo de tickets</label>
         <select id="interest" name="interest" required>
           <option value="">Seleccione...</option>
-          <option value="Standar">Standar</option>
-          <option value="Thenme park">Thenme park</option>
+          <option value="Standard">Standard</option>
           <option value="Water park and sport">Water park and sport</option>
           <option value="Park hopper">Park hopper</option>
           <option value="Park Hopper plus">Park Hopper plus </option>
@@ -139,12 +138,13 @@
         event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
         // Obtiene los valores de los campos del formulario
+        var cantDias = document.getElementById("cantDias").value;
         var interest = document.getElementById("interest").value;
         var totalChildren = document.getElementById("totalChildren").value;
         var totalAdults = document.getElementById("totalAdults").value;
 
         // Formatea el mensaje con los datos del formulario
-        var formattedMessage = "Me gustaria una cotizacion de " + interest + ". En total somos " + totalAdults + " y " + totalChildren + ".";
+        var formattedMessage = "Hola! Me gustaria una cotizacion de " + interest + "para" + cantDias +  "dias. En total somos " + totalAdults + "adultos  y " + totalChildren + "niños.";
 
         // Crea la URL de WhatsApp con el mensaje predefinido
         var whatsappURL = "https://api.whatsapp.com/send?phone=+5493413348425&text=" + encodeURIComponent(formattedMessage);
