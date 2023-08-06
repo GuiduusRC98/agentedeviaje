@@ -1465,6 +1465,9 @@ select{
   .whatsapp-propaganda{
     margin-left: 200px;
   }
+  .Currency{
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1475,6 +1478,9 @@ select{
   }
   .whatsapp-propaganda{
     margin-left: 120px;
+  }
+  .Currency{
+    margin-left: 10px;
   }
   .Currency .titlepage h2{
     line-height: 50px;
