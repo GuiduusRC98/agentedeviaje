@@ -1580,3 +1580,22 @@ select{
     display: block;
   }
 }
+@media (max-width: 480px) {
+  .propaganda{
+    width: 360px;
+    height: 150px;
+    margin-left: 50px;
+  }
+  .propaganda p{
+    display: none;
+  }
+  .propaganda h3{
+    margin-left: 10px
+  }
+  .whatsapp-propaganda{
+    margin-left: 55px;
+  }
+  .Currency{
+    margin-left: 5px;
+  }
+}
