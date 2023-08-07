@@ -1439,7 +1439,8 @@ select {
   color: white;
   background-repeat: no-repeat;
   width: 750px;
-  max-width: fit-content;
+  padding: 25px;
+  max-width: 750px;
   min-height: 100px;
   background-size: cover;
 }
