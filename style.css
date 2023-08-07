@@ -1438,10 +1438,13 @@ select {
   flex-direction: column;
   color: white;
   background-repeat: no-repeat;
-  width: 770px;
+  width: 750px;
   max-width: fit-content;
   min-height: 100px;
   background-size: cover;
+}
+.expressHogwarts p{
+  margin-left: 10px;
 }
 
 .tickets-especial {
