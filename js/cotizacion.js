@@ -17,7 +17,7 @@ function enviarPorWhatsApp() {
   Cantidad de personas: ${totalPeople}`;
   
     const encodedMensaje = encodeURIComponent(mensajeWhatsApp);
-    const whatsappURL = `https://api.whatsapp.com/phone=+5493416483029&text=${encodedMensaje}`;
+    const whatsappURL = `https://api.whatsapp.com/send?phone=+5493416483029&text=${encodedMensaje}`;
   
     window.open(whatsappURL, '_blank');
   }
