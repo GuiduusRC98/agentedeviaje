@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo_web.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gabita Travel Planner</title>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="img/logo_gabita.png" alt="logo de gabita traver planner" />
+    </div>
+    <header>
+      <nav class="navbarGabita d-flex justify-content-center">
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="img/crucero_disney.svg"
+                alt="cruceros"
+                width="256px"
+                height="120px"
+              />
+              <span>Cruceros</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="tickets.html" class="nav-link">
+              <img
+                src="img/ticket.svg"
+                alt="ticket"
+                width="35px"
+                height="24px"
+              />
+              <span>Tickets</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="disney.html" class="nav-link">
+              <img
+                src="img/Disney_logo.svg"
+                alt="disney"
+                width="35px"
+                height="24px"
+              />
+              <span>Disney</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universal.html" class="nav-link">
+              <img
+                src="img/Universal_logo.svg"
+                alt="universal"
+                width="35px"
+                height="24px"
+              />
+              <span>Universal</span>
+            </a>
+            <!--           <ul class="dropdown-menu">
+            <li><a href="universal_parks.html">Parques Universal</a></li>
+            <li><a href="universal_hotels.html">Hoteles Universal</a></li>
+            <li><a href="universal_events.html">Eventos Universal</a></li>
+          </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="autos.html" class="nav-link">
+              <img src="img/auto.svg" alt="autos" width="35px" height="24px" />
+              <span>Autos</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">
+              <i class="fas fa-hotel"></i>
+              <span>Otros Hoteles</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="hoteles_universal.html">Hoteles Orlando</a></li>
+              <li><a href="hoteles_disney.html">Hoteles Miami</a></li>
+              <li><a href="otros_hoteles.html">Otros Destinos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="whatsapp-button">
+      <a
+        href="https://api.whatsapp.com/send?phone=+5493416483029&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <br />
+    <!-- Contacto a whastapp -->
+    <section class="login">
+      <div class="form-container">
+        <form id="contactForm">
+          <h1 class="form-header">Tickets y Parques</h1>
+          <label for="cantDias">Cantidad de días</label>
+          <div class="quantity-selector">
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="decreaseValueDias()"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="cantDias"
+              name="cantDias"
+              min="2"
+              max="10"
+              value="2"
+              required
+            />
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="increaseValueDias()"
+            >
+              +
+            </button>
+          </div>
+          <label for="interest">Tipo de tickets</label>
+          <select id="interest" name="interest" required>
+            <option value="">Seleccione...</option>
+            <option value="One park Per day">One park Per day</option>
+            <option value="Park to park">Park to park</option>
+            <option value="Explorer">Explorer</option>
+          </select>
+
+          <label for="totalAdults">Adultos (10+)</label>
+          <div class="quantity-selector">
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="decreaseValueAdult()"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="totalAdults"
+              name="totalAdults"
+              min="0"
+              max="10"
+              value="0"
+              required
+            />
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="increaseValueAdult()"
+            >
+              +
+            </button>
+          </div>
+          <br />
+          <label for="totalChildren">Niños (de 3 a 9 años)</label>
+          <div class="quantity-selector">
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="decreaseValue()"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="totalChildren"
+              name="totalChildren"
+              min="0"
+              max="10"
+              value="0"
+              required
+            />
+            <button
+              type="button"
+              class="quantity-btn"
+              onclick="increaseValue()"
+            >
+              +
+            </button>
+          </div>
+
+          <button type="submit">Cotizá Ya</button>
+        </form>
+      </div>
+
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+            // Obtiene los valores de los campos del formulario
+            var cantDias = document.getElementById("cantDias").value;
+            var interest = document.getElementById("interest").value;
+            var totalChildren = document.getElementById("totalChildren").value;
+            var totalAdults = document.getElementById("totalAdults").value;
+
+            // Formatea el mensaje con los datos del formulario
+            var formattedMessage =
+              "Hola! Me gustaria una cotizacion de tickets " +
+              interest +
+              " para " +
+              cantDias +
+              " dias. En total somos " +
+              totalAdults +
+              " adultos  y " +
+              totalChildren +
+              " niños.";
+
+            // Crea la URL de WhatsApp con el mensaje predefinido
+            var whatsappURL =
+              "https://api.whatsapp.com/send?phone=+5493413348425&text=" +
+              encodeURIComponent(formattedMessage);
+
+            // Abre WhatsApp en una nueva ventana o pestaña
+            window.open(whatsappURL, "_blank");
+            // Puedes mostrar un mensaje de éxito o redireccionar al usuario a otra página
+            alert("¡Mensaje enviado con éxito!");
+            contactForm.reset();
+            /* window.location.href = "https://www.ejemplo.com/pagina-de-agradecimiento"; */
+          });
+      </script>
+    </section>
+    <br />
+    <div class="section-service">
+      <h4 class="text-primary text-uppercase" style="letter-spacing: 8px">
+        Tipos de parques
+      </h4>
+      <h1 class="display-4">Para tu mágica aventura</h1>
+    </div>
+    <div class="container">
+      <div class="tickets-general">
+        <div class="tickets">
+          <div>
+            <h4>
+              <img
+                src="img/icon_seaworld.png"
+                alt=""
+                width="40px"
+                height="40px"
+              />
+              SeaWorld
+            </h4>
+            <p class="m-0">
+              Sumérgete en las maravillas de SeaWorld Orlando® donde el universo
+              marino es el protagonista. Siente el poder de un depredador. Mira
+              el mundo a través de los ojos de un pingüino, conoce los peligros
+              a los que se enfrentan las tortugas. Vive el poder y la gracia de
+              las orcas en la presentación de Shamú, One Ocean®. ¡Sumérgete en
+              esta aventura!
+            </p>
+          </div>
+        </div>
+        <div class="tickets">
+          <div>
+            <h4>
+              <img
+                src="img/icon_bushgarden.png"
+                alt=""
+                width="40px"
+                height="40px"
+              />
+              Busch Garden
+            </h4>
+            <p class="m-0">
+              En Busch Gardens disfrutarás de shows y atracciones, como el
+              espectáculo de patinaje sobre hielo Iceploration; y, para los
+              amantes de la velocidad: Falcon's Fury, la mayor torre de caída
+              libre de Estados Unidos, que alcanza una velocidad de 96km/h.
+              Además, en el Animal Care Center, toda la familia podrá ser
+              testigo de los tratamientos que expertos veterinarios aplican a
+              los animales del centro.
+            </p>
+          </div>
+        </div>
+        <div class="tickets">
+          <div>
+            <h4>
+              <img src="img/icon_lego.png" alt="" width="40px" height="40px" />
+              Lego Land
+            </h4>
+            <p class="m-0">
+              Es un parque temático interactivo con más de 50 atracciones,
+              espectáculos, restaurantes, tiendas, un impresionante jardín
+              botánico y un parque acuático, todos orientados a familias con
+              niños de 2 a 12 años.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/logo_web.png" alt="Logo" />
+          </div>
+          <div class="footer-info">
+            <h3>Contacto</h3>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Rosario, Santa
+              Fe, Argentina
+            </p>
+            <p><i class="fab fa-whatsapp"></i> +54 9 3416 48-3029</p>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              gabriela.h@mhtravelagency.com
+            </p>
+          </div>
+          <div class="footer-social">
+            <h3>Redes Sociales</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook-f"></i> @gabitatravelplanner</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-instagram"></i> @gabita.travelplanner</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <p>
+          7380 W Sand Lake Rd Ste 500 Orlando, Florida 32819-5257 Estados Unidos
+        </p>
+        <p>
+          Magic Holidays Travel Agency es una web on line no oficial para los
+          destinos Orlando y Walt Disney World Resort.
+        </p>
+        <p>
+          Logotipos y propiedades Disney: ©Disney Disney Cruise Line. Barcos
+          registrados en Las Bahamas The Wizarding World of Harry Potter™
+          Butterbeer™ y demás contenido relacionado son marcas registradas y ©
+          Warner Bros. Entertainment Inc. Harry Potter Publishing Rights © JKR.
+        </p>
+        <p>
+          Es un sitio privado, la cual no pertenece, no esta afiliado a Disney
+          World, Universal Studios.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

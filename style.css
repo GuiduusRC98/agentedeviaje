@@ -385,7 +385,9 @@ nav {
 }
 
 /* promos nuevas   background-color: #fff;*/
-
+.tickets-margin{
+  margin-right: 120px;
+}
 .Currency {
   padding: 90px;
   margin-left: 120px;
@@ -395,7 +397,9 @@ nav {
   text-align: center;
   padding-bottom: 45px;
 }
-
+.title-tickets{
+  margin-left: 400px;
+}
 .Currency .titlepage h2 {
   line-height: 72px;
   color: #539df8;
@@ -1437,12 +1441,15 @@ select {
   flex-direction: column;
   color: white;
   width: 750px;
+  max-height: 100px;
   max-width: 750px;
+  object-fit: cover;
   padding: 25px;
 }
 .expressHogwarts p{
+  margin-top: 10px;
   margin-left: 10px;
-  margin-right: 110px;
+  max-width: 400px;
 }
 
 .tickets-especial {
