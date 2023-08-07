@@ -1431,9 +1431,7 @@ select {
 
 .expressHogwarts {
   background-image: url(img/tren.jpg);
-  background-position: left;
   margin-top: 50px;
-  margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
