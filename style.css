@@ -355,6 +355,7 @@ nav {
 }
 
 .about-para p {
+  color: #333;
   font-weight: 300;
   padding: 0.5rem;
   opacity: 0.8;
@@ -414,6 +415,9 @@ nav {
 .Currency .three-box figure img {
   width: 100%;
   max-width: 280px;
+  max-height: 280px;
+  height: 280px;
+  object-fit: cover;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
@@ -1757,8 +1761,18 @@ select{
     margin-right: 300px;
     padding-left: 0px;
   }
+  .title-tickets{
+    padding-left: 60px;
+  }
 }
 @media (max-width: 480px) {
+  .title-tickets{
+    padding-left: 60px;
+  }
+  .three-box {
+    margin-left: -3.8em;
+    margin-top: 1em;
+  }
   .propaganda{
     width: 360px;
     height: 150px;
