@@ -1014,7 +1014,9 @@ header {
 nav {
   background-color: #ffffff;
 }
-
+.menu-hamburgesa{
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -1385,8 +1387,6 @@ nav {
 }
 
 .quantity-btn {
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   background-color: #0154bc;
   color: white;
@@ -1558,6 +1558,14 @@ p {
     display: none;
   }
 
+  .dropdown {
+    display: none;
+  }
+
+  .menu-hamburgesa{
+    display: block;
+  }
+
   .nav-item.active .dropdown-menu {
     display: block;
   }
@@ -1601,6 +1609,13 @@ p {
 }
 
 @media (max-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+
+  .menu-hamburgesa{
+    display: block;
+  }
   header {
     padding: 0;
   }
@@ -1707,6 +1722,13 @@ p {
 }
 
 @media (max-width: 576px) {
+  .dropdown {
+    display: none;
+  }
+
+  .menu-hamburgesa{
+    display: block;
+  }
   .propaganda {
     width: 470px;
     height: 200px;
@@ -1851,6 +1873,13 @@ p {
 }
 
 @media (max-width: 480px) {
+  .dropdown {
+    display: none;
+  }
+
+  .menu-hamburgesa{
+    display: block;
+  }
   .title-tickets {
     padding-left: 60px;
   }
@@ -1892,6 +1921,13 @@ p {
 }
 
 @media (max-width: 360px) {
+  .dropdown {
+    display: none;
+  }
+
+  .menu-hamburgesa{
+    display: block;
+  }
   .propaganda {
     width: 360px;
     height: 150px;
