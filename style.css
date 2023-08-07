@@ -819,6 +819,7 @@ button[type="submit"]:hover {
 .footer .footer-content {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   color: #fff;
@@ -1528,6 +1529,18 @@ select{
   .whatsapp-propaganda{
     margin-left: 250px;
   }
+  .footer-content {
+    display: flex;
+    margin-left: 120px;
+  }
+  .footer-logo{
+    margin-left: -50px;
+  }
+  .footer .footer-info {
+    margin: 0;
+    margin-left: 20px;
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1611,6 +1624,15 @@ select{
   }
   .footer-logo{
     display: none;
+  }
+  .footer-content {
+    display: flex;
+    margin-left: 200px;
+  }
+  .footer .footer-info {
+    margin: 0;
+    margin-right: 300px;
+    padding-left: 0px;
   }
 }
 
@@ -1725,6 +1747,15 @@ select{
 
   .nav-item.active .dropdown-menu {
     display: block;
+  }
+  .footer-content {
+    display: flex;
+    margin-left: 120px;
+  }
+  .footer .footer-info {
+    margin: 0;
+    margin-right: 300px;
+    padding-left: 0px;
   }
 }
 @media (max-width: 480px) {
