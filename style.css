@@ -55,6 +55,7 @@ header {
 nav {
   background-color: #ffffff;
 }
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -167,6 +168,7 @@ nav {
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
+
 /* sobre mi */
 .about-wrapper {
   height: 100vh;
@@ -181,7 +183,7 @@ nav {
   height: 100vh;
 }
 
-.about-left-content > div {
+.about-left-content>div {
   background: #489efa;
   padding: 4rem 4rem 2.5rem 5rem;
   border-radius: 15px 15px 0px 0px;
@@ -400,7 +402,8 @@ nav {
   font-size: 55px;
   font-weight: 650;
 }
-.Currency a{
+
+.Currency a {
   text-decoration: none;
 }
 
@@ -635,13 +638,15 @@ label {
   color: #333;
   margin-bottom: 5px;
 }
-.login input[type="text"]{
+
+.login input[type="text"] {
   width: 250px;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 select {
   width: 100%;
   padding: 8px;
@@ -649,9 +654,11 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.login input[type="date"]{
+
+.login input[type="date"] {
   width: 150px;
 }
+
 .login button[type="submit"] {
   display: block;
   margin: 20px auto;
@@ -676,15 +683,16 @@ button[type="submit"]:hover {
   color: #999;
 }
 
-.propaganda{
+.propaganda {
   background-image: url(img/castillo_disney_propaganda.jpg);
-  border-radius: 20px 20px 20px 20px ;
+  border-radius: 20px 20px 20px 20px;
   width: 1250px;
   height: 200px;
   margin-left: 50px;
   object-fit: cover;
 }
-.propaganda h3{
+
+.propaganda h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
   margin-left: 55px;
@@ -692,7 +700,8 @@ button[type="submit"]:hover {
   padding-top: 40px;
   color: #fff;
 }
-.propaganda p{
+
+.propaganda p {
   margin-left: 55px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -700,7 +709,7 @@ button[type="submit"]:hover {
   color: #fff;
 }
 
-.whatsapp-propaganda{
+.whatsapp-propaganda {
   margin-left: 500px;
   background-color: #25d366;
   color: white;
@@ -709,10 +718,11 @@ button[type="submit"]:hover {
   border-radius: 10px;
 }
 
-.whatsapp-propaganda:hover{
+.whatsapp-propaganda:hover {
   background-color: #128c7e;
   color: #fff;
 }
+
 /* servicios */
 @media screen and (min-width: 1200px) {
   .box-servicios {
@@ -810,14 +820,14 @@ button[type="submit"]:hover {
 .footer {
   background-color: #0056b3;
   padding: 10px 0;
-  
+
 }
 
 .footer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  
+
 }
 
 .footer .footer-content {
@@ -894,6 +904,7 @@ button[type="submit"]:hover {
   line-height: 1.5;
   color: #fff;
 }
+
 .footer .footer-social .social-links a {
   text-decoration: none;
   font-size: 14px;
@@ -1297,19 +1308,15 @@ nav {
 }
 
 .projcard-customcolor::before {
-  background-image: linear-gradient(
-    -70deg,
-    var(--projcard-color),
-    transparent 50%
-  );
+  background-image: linear-gradient(-70deg,
+      var(--projcard-color),
+      transparent 50%);
 }
 
 .projcard-customcolor:nth-child(2n)::before {
-  background-image: linear-gradient(
-    -250deg,
-    var(--projcard-color),
-    transparent 50%
-  );
+  background-image: linear-gradient(-250deg,
+      var(--projcard-color),
+      transparent 50%);
 }
 
 .projcard-description {
@@ -1319,6 +1326,7 @@ nav {
   height: 125px;
   overflow-y: auto;
 }
+
 .projcard-tagbox {
   z-index: 10;
   position: absolute;
@@ -1394,7 +1402,7 @@ input[type="number"] {
   font-size: 16px;
 }
 
-select{
+select {
   max-width: 270px;
 
 }
@@ -1405,6 +1413,7 @@ select{
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .tickets {
   margin-top: 50px;
   display: flex;
@@ -1418,7 +1427,8 @@ select{
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
-.expressHogwarts{
+
+.expressHogwarts {
   background-image: url(https://www.universalorlando.com/webdata/k2/en/us/files/Images/VP-HWE-LVP-Banner.jpg);
   margin-top: 50px;
   display: flex;
@@ -1426,7 +1436,12 @@ select{
   justify-content: center;
   flex-direction: column;
   color: white;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100px;
+  background-size: cover;
 }
+
 .tickets-especial {
   margin-top: 50px;
   display: flex;
@@ -1440,10 +1455,13 @@ select{
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
-.tickets h3, p{
+
+.tickets h3,
+p {
   color: #fff;
 }
-.tickets .ticket-parrafo{
+
+.tickets .ticket-parrafo {
   margin-top: 20px;
   line-height: 1.5;
 }
@@ -1452,10 +1470,12 @@ select{
   .projcard-container {
     max-width: 800px;
   }
+
   .three-box {
     margin-top: 1em;
   }
-  .Currency a{
+
+  .Currency a {
     text-decoration: none;
   }
 }
@@ -1463,17 +1483,21 @@ select{
 @media (max-width: 992px) {
   .projcard-container {
     max-width: 600px;
-    
+
   }
+
   .projcard-description {
     display: none;
   }
+
   .projcard-tag {
     display: none;
   }
+
   .btn {
     margin: 0px 0px 0px -1rem;
   }
+
   .navbarGabita .nav-list {
     display: none;
   }
@@ -1489,10 +1513,12 @@ select{
     flex-direction: column;
     align-items: center;
   }
-  .nav-item img{
+
+  .nav-item img {
     display: none;
   }
-  .nav-item i{
+
+  .nav-item i {
     display: none;
   }
 
@@ -1525,30 +1551,38 @@ select{
   .nav-item.active .dropdown-menu {
     display: block;
   }
-  .projcard-subtitle{
+
+  .projcard-subtitle {
     display: none;
   }
+
   .three-box {
     margin-top: 1em;
   }
-  .Currency a{
+
+  .Currency a {
     text-decoration: none;
   }
-  .propaganda{
+
+  .propaganda {
     width: 750px;
     height: 200px;
     margin-left: 30px;
   }
-  .whatsapp-propaganda{
+
+  .whatsapp-propaganda {
     margin-left: 250px;
   }
+
   .footer-content {
     display: flex;
     margin-left: 120px;
   }
-  .footer-logo{
+
+  .footer-logo {
     margin-left: -50px;
   }
+
   .footer .footer-info {
     margin: 0;
     margin-left: 20px;
@@ -1557,9 +1591,10 @@ select{
 }
 
 @media (max-width: 768px) {
-  header{
+  header {
     padding: 0;
   }
+
   .navbarGabita .nav-list {
     display: none;
   }
@@ -1575,10 +1610,12 @@ select{
     flex-direction: column;
     align-items: center;
   }
-  .nav-item img{
+
+  .nav-item img {
     display: none;
   }
-  .nav-item i{
+
+  .nav-item i {
     display: none;
   }
 
@@ -1611,37 +1648,47 @@ select{
   .nav-item.active .dropdown-menu {
     display: block;
   }
-  .projcard-subtitle{
+
+  .projcard-subtitle {
     display: none;
   }
+
   .three-box {
     margin-top: 1em;
   }
-  .Currency a{
+
+  .Currency a {
     text-decoration: none;
   }
-  .propaganda{
+
+  .propaganda {
     width: 630px;
     height: 200px;
     margin-left: 20px;
-    
+
   }
-  .tickets{
+
+  .tickets {
     max-width: 630px;
   }
-  .whatsapp-propaganda{
+
+  .whatsapp-propaganda {
     margin-left: 200px;
   }
-  .Currency{
+
+  .Currency {
     margin-left: 50px;
   }
-  .footer-logo{
+
+  .footer-logo {
     display: none;
   }
+
   .footer-content {
     display: flex;
     margin-left: 200px;
   }
+
   .footer .footer-info {
     margin: 0;
     margin-right: 300px;
@@ -1650,59 +1697,71 @@ select{
 }
 
 @media (max-width: 576px) {
-  .propaganda{
+  .propaganda {
     width: 470px;
     height: 200px;
     margin-left: 10px;
   }
-  .tickets{
+
+  .tickets {
     max-width: 470px;
   }
-  .whatsapp-propaganda{
+
+  .whatsapp-propaganda {
     margin-left: 120px;
   }
-  .Currency{
+
+  .Currency {
     margin-left: 10px;
   }
-  .Currency .titlepage h2{
+
+  .Currency .titlepage h2 {
     line-height: 50px;
     color: #539df8;
     font-size: 35px;
     font-weight: 650;
     margin-left: -75px;
   }
-  .Currency a{
+
+  .Currency a {
     text-decoration: none;
   }
+
   .three-box {
     margin-left: -0.8em;
     margin-top: 1em;
   }
+
   .projcard-container {
     max-width: 100%;
     margin: 0;
   }
-  .btn{
+
+  .btn {
     margin: -19.5rem;
   }
-  .projcard-bar{
+
+  .projcard-bar {
     display: none;
   }
-  .projcard-subtitle{
+
+  .projcard-subtitle {
     display: none;
   }
-  .btn-izquierda{
+
+  .btn-izquierda {
     margin-left: 9.5rem;
   }
 
   .projcard-description {
     display: none;
   }
+
   .projcard-tag {
     display: none;
   }
 
-  .projcard-title{
+  .projcard-title {
     display: none;
   }
 
@@ -1710,6 +1769,7 @@ select{
     height: 200px;
     max-width: 100%;
   }
+
   .navbarGabita .nav-list {
     display: none;
   }
@@ -1725,10 +1785,12 @@ select{
     flex-direction: column;
     align-items: center;
   }
-  .nav-item img{
+
+  .nav-item img {
     display: none;
   }
-  .nav-item i{
+
+  .nav-item i {
     display: none;
   }
 
@@ -1761,71 +1823,88 @@ select{
   .nav-item.active .dropdown-menu {
     display: block;
   }
+
   .footer-content {
     display: flex;
     margin-left: 120px;
   }
+
   .footer .footer-info {
     margin: 0;
     margin-right: 300px;
     padding-left: 0px;
   }
-  .title-tickets{
+
+  .title-tickets {
     padding-left: 60px;
   }
 }
+
 @media (max-width: 480px) {
-  .title-tickets{
+  .title-tickets {
     padding-left: 60px;
   }
+
   .three-box {
     margin-left: -3.8em;
     margin-top: 1em;
   }
-  .propaganda{
+
+  .propaganda {
     width: 360px;
     height: 150px;
     margin-left: 50px;
   }
-  .tickets{
+
+  .tickets {
     max-width: 360px;
   }
-  .propaganda p{
+
+  .propaganda p {
     display: none;
   }
-  .propaganda h3{
+
+  .propaganda h3 {
     margin-left: 10px
   }
-  .whatsapp-propaganda{
+
+  .whatsapp-propaganda {
     margin-left: 55px;
   }
-  .Currency{
+
+  .Currency {
     margin-left: 5px;
   }
-  .footer-logo{
+
+  .footer-logo {
     display: none;
   }
 }
 
 @media (max-width: 360px) {
-  .propaganda{
+  .propaganda {
     width: 360px;
     height: 150px;
     margin-left: 20px;
   }
-  .tickets{
+
+  .tickets {
     max-width: 360px;
   }
-  .propaganda p{
+
+  .propaganda p {
     display: none;
   }
-  .propaganda h3{
+
+  .propaganda h3 {
     margin-left: 10px
   }
-  .whatsapp-propaganda{
+
+  .whatsapp-propaganda {
     margin-left: 55px;
   }
-  .Currency{
+
+  .Currency {
     margin-left: 5px;
   }
 }
