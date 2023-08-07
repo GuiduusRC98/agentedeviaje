@@ -1,0 +1,41 @@
+function enviarPorWhatsApp() {
+    const fechaRetiro = document.getElementById('fechaRetiro').value;
+    const lugarRetiro = document.getElementById('lugarRetiro').value;
+    const horaRetiro = document.getElementById('horaRetiro').value;
+    const fechaDevolucion = document.getElementById('fechaDevolucion').value;
+    const horaDevolucion = document.getElementById('horaDevolucion').value;
+    const lugarDevolucion = document.getElementById('lugarDevolucion').value;
+    const totalPeople = document.getElementById('totalPeople').value;
+  
+    const mensajeWhatsApp = `Reserva de vehículo:
+  Fecha de retiro: ${fechaRetiro}
+  Lugar de retiro: ${lugarRetiro}
+  Hora de retiro: ${horaRetiro}
+  Fecha de devolución: ${fechaDevolucion}
+  Hora de devolución: ${horaDevolucion}
+  Lugar de devolución: ${lugarDevolucion}
+  Cantidad de personas: ${totalPeople}`;
+  
+    const encodedMensaje = encodeURIComponent(mensajeWhatsApp);
+    const whatsappURL = `https://api.whatsapp.com/phone=+5493416483029&text=${encodedMensaje}`;
+  
+    window.open(whatsappURL, '_blank');
+  }
+  
+  function increaseValuePeople() {
+    var value = parseInt(document.getElementById('totalPeople').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value < 20) {
+      value++;
+    }
+    document.getElementById('totalPeople').value = value;
+  }
+  
+  function decreaseValuePeople() {
+    var value = parseInt(document.getElementById('totalPeople').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value > 0) {
+      value--;
+    }
+    document.getElementById('totalPeople').value = value;
+  }  
