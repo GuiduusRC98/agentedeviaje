@@ -20,9 +20,9 @@ function enviarPorWhatsApp() {
     const whatsappURL = `https://api.whatsapp.com/send?phone=+5493416483029&text=${encodedMensaje}`;
   
     window.open(whatsappURL, '_blank');
-  }
+}
   
-  function increaseValuePeople() {
+function increaseValuePeople() {
     var value = parseInt(document.getElementById('totalPeople').value, 20);
     value = isNaN(value) ? 0 : value;
     if (value < 20) {
