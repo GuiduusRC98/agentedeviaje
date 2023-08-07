@@ -1418,20 +1418,14 @@ select{
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
-.tickets-promo {
+.expressHogwarts{
+  background-image: url(https://www.universalorlando.com/webdata/k2/en/us/files/Images/VP-HWE-LVP-Banner.jpg);
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   color: white;
-  max-width: 750px;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
-}
-.expressHogwarts{
-  background-image: url(https://www.universalorlando.com/webdata/k2/en/us/files/Images/VP-HWE-LVP-Banner.jpg);
 }
 .tickets-especial {
   margin-top: 50px;
