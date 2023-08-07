@@ -1428,7 +1428,21 @@ select {
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
+.small-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
 
+.small-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.column{
+  flex: 1 1 0px;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  min-width: 0;
+}
 .expressHogwarts {
   background-image: url(https://www.universalorlando.com/webdata/k2/en/us/files/Images/VP-HWE-LVP-Banner.jpg);
   margin-top: 50px;
@@ -1438,7 +1452,7 @@ select {
   flex-direction: column;
   color: white;
   background-repeat: no-repeat;
-  width: 1052px;
+  width: 1770px;
   max-width: fit-content;
   min-height: 100px;
   background-size: cover;
