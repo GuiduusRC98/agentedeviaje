@@ -1433,6 +1433,7 @@ select {
   background-image: url(img/tren.jpg);
   background-position: left;
   margin-top: 50px;
+  margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1447,7 +1448,7 @@ select {
 }
 .expressHogwarts p{
   margin-left: 10px;
-  margin-right: 80px;
+  margin-right: 110px;
 }
 
 .tickets-especial {
