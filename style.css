@@ -1423,6 +1423,7 @@ select {
   background: linear-gradient(to bottom, #273572, #5669b6);
   color: white;
   max-width: 750px;
+  width: 750px;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
@@ -1437,7 +1438,8 @@ select {
   flex-direction: column;
   color: white;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 1052px;
+  max-width: fit-content;
   min-height: 100px;
   background-size: cover;
 }
