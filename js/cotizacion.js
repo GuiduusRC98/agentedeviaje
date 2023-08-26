@@ -1,3 +1,19 @@
+function enviarPorWhatsAppCrucero() {
+  const fechadeViaje = document.getElementById('fechadeViaje').value;
+  const totalAdults = document.getElementById('totalAdults').value;
+  const totalChildren = document.getElementById('totalChildren').value;
+
+  const mensajeWhatsApp = `Reserva de vehículo:
+  Mes de viaje: ${fechadeViaje}
+  Total de menores: ${totalChildren}
+  Total de Adultos: ${totalAdults}`;
+
+  const encodedMensaje = encodeURIComponent(mensajeWhatsApp);
+  const whatsappURL = `https://api.whatsapp.com/send?phone=+5493416483029&text=${encodedMensaje}`;
+
+  window.open(whatsappURL, '_blank');
+}
+
 function enviarPorWhatsApp() {
     const fechaRetiro = document.getElementById('fechaRetiro').value;
     const lugarRetiro = document.getElementById('lugarRetiro').value;
@@ -39,3 +55,5 @@ function increaseValuePeople() {
     }
     document.getElementById('totalPeople').value = value;
   }  
+
+
