@@ -3,10 +3,8 @@ function enviarPorWhatsAppCrucero() {
   const totalAdults = document.getElementById('totalAdults').value;
   const totalChildren = document.getElementById('totalChildren').value;
 
-  const mensajeWhatsApp = `Reserva de vehículo:
-  Mes de viaje: ${fechadeViaje}
-  Total de menores: ${totalChildren}
-  Total de Adultos: ${totalAdults}`;
+  const mensajeWhatsApp = `Cotizacion de crucero:
+  Mes de viaje: ${fechadeViaje} ,  somos ${totalChildren} menores y ${totalAdults} adultos`;
 
   const encodedMensaje = encodeURIComponent(mensajeWhatsApp);
   const whatsappURL = `https://api.whatsapp.com/send?phone=+5493416483029&text=${encodedMensaje}`;
