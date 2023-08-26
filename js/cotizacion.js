@@ -1,10 +1,11 @@
 function enviarPorWhatsAppCrucero() {
   const fechadeViaje = document.getElementById('fechadeViaje').value;
-  const totalAdults = document.getElementById('totalAdults').value;
-  const totalChildren = document.getElementById('totalChildren').value;
+  const anodeViaje = document.getElementById('anodeViaje').value;
+  const totalAdults = parseInt(document.getElementById('totalAdults').value);
+  const totalChildren = parseInt(document.getElementById('totalChildren').value);  
+  const totalPerson = Number(totalChildren + totalAdults);
 
-  const mensajeWhatsApp = `Cotizacion de crucero:
-  Mes de viaje: ${fechadeViaje} ,  somos ${totalChildren} menores y ${totalAdults} adultos`;
+  const mensajeWhatsApp = `Cotizacion de crucero: Año de viaje:\n ${anodeViaje}  \nMes de viaje: ${fechadeViaje}.\nSomos en total ${totalPerson} , ${totalChildren} menores y ${totalAdults} adultos`;
 
   const encodedMensaje = encodeURIComponent(mensajeWhatsApp);
   const whatsappURL = `https://api.whatsapp.com/send?phone=+5493416483029&text=${encodedMensaje}`;
@@ -54,4 +55,40 @@ function increaseValuePeople() {
     document.getElementById('totalPeople').value = value;
   }  
 
+  /* TOTAL ADULTO */
+  function increaseValueAdult() {
+    var value = parseInt(document.getElementById('totalAdults').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value < 20) {
+      value++;
+    }
+    document.getElementById('totalAdults').value = value;
+  }
+  
+  function decreaseValueAdult() {
+    var value = parseInt(document.getElementById('totalAdults').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value > 0) {
+      value--;
+    }
+    document.getElementById('totalAdults').value = value;
+  }  
 
+  /* TOTAL MENORES */
+  function increaseValueChildren() {
+    var value = parseInt(document.getElementById('totalChildren').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value < 20) {
+      value++;
+    }
+    document.getElementById('totalChildren').value = value;
+  }
+  
+  function decreaseValueChildren() {
+    var value = parseInt(document.getElementById('totalChildren').value, 20);
+    value = isNaN(value) ? 0 : value;
+    if (value > 0) {
+      value--;
+    }
+    document.getElementById('totalChildren').value = value;
+  }  

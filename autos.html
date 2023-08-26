@@ -97,6 +97,7 @@
             </ul>
           </nav>          
     </header>
+    <div class="form-container">
     <form id="reservationForm">
         <h1 class="form-header">Cotizar Automovil</h1>
         <label for="fechaRetiro">Fecha de retiro:</label>
@@ -117,16 +118,17 @@
         <label for="lugarDevolucion">Lugar de devolución:</label>
         <input type="text" id="lugarDevolucion"  placeholder="Indique ciudad donde devolver" required>
 
-        <label for="totalPeople">Cantidad de personas</label>
+        <label for="totalPeople" class="text-md-center">Cantidad de personas</label>
                 <div class="cantidad-selector">
                     <button type="button" class="cantidad-btn" onclick="decreaseValuePeople()">-</button>
                     <input type="number" id="totalPeople" name="totalPeople" min="0" max="20" value="0" required>
                     <button type="button" class="cantidad-btn" onclick="increaseValuePeople()">+</button>
                 </div>
-                
+                <div class="text-md-center">
         <button type="button" class="btn btn-pink" onclick="enviarPorWhatsApp()">Cotizar Ya</button>
+      </div>
       </form>
-    
+    </div>
 
     <div class="whatsapp-button">
       <a

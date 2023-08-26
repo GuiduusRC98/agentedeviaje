@@ -329,7 +329,7 @@ nav {
   width: 160px;
   font-weight: 600;
   background: transparent;
-  margin: 0 0.5rem;
+  margin: 10px 0.5rem;
   cursor: pointer;
 }
 
@@ -629,11 +629,10 @@ nav {
   margin-bottom: 20px;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+.form-cotizacion{
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  }
 
 label {
   font-size: 14px;
@@ -1396,6 +1395,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#ano input[type="number"] {
+  text-align: center;
+  font-size: 16px;
 }
 
 input[type="number"] {
