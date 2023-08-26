@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 /* Estilos generales */
 
 body {
@@ -183,7 +183,7 @@ nav {
   height: 100vh;
 }
 
-.about-left-content>div {
+.about-left-content > div {
   background: #489efa;
   padding: 4rem 4rem 2.5rem 5rem;
   border-radius: 15px 15px 0px 0px;
@@ -385,7 +385,7 @@ nav {
 }
 
 /* promos nuevas   background-color: #fff;*/
-.tickets-margin{
+.tickets-margin {
   margin-right: 120px;
 }
 .Currency {
@@ -396,7 +396,7 @@ nav {
   text-align: center;
   padding-bottom: 45px;
 }
-.title-tickets{
+.title-tickets {
   margin-left: 400px;
 }
 .Currency .titlepage h2 {
@@ -696,7 +696,7 @@ button[type="submit"]:hover {
 }
 
 .propaganda h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bolder;
   margin-left: 55px;
   font-style: oblique;
@@ -706,7 +706,7 @@ button[type="submit"]:hover {
 
 .propaganda p {
   margin-left: 55px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   padding-top: 5px;
   color: #fff;
@@ -823,14 +823,12 @@ button[type="submit"]:hover {
 .footer {
   background-color: #0056b3;
   padding: 10px 0;
-
 }
 
 .footer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 
 .footer .footer-content {
@@ -925,7 +923,6 @@ button[type="submit"]:hover {
   color: #fff;
 }
 
-
 /* Boton whatsapp */
 
 .whatsapp-button {
@@ -1013,7 +1010,7 @@ header {
 nav {
   background-color: #ffffff;
 }
-.menu-hamburgesa{
+.menu-hamburgesa {
   display: none;
 }
 .logo {
@@ -1313,15 +1310,19 @@ nav {
 }
 
 .projcard-customcolor::before {
-  background-image: linear-gradient(-70deg,
-      var(--projcard-color),
-      transparent 50%);
+  background-image: linear-gradient(
+    -70deg,
+    var(--projcard-color),
+    transparent 50%
+  );
 }
 
 .projcard-customcolor:nth-child(2n)::before {
-  background-image: linear-gradient(-250deg,
-      var(--projcard-color),
-      transparent 50%);
+  background-image: linear-gradient(
+    -250deg,
+    var(--projcard-color),
+    transparent 50%
+  );
 }
 
 .projcard-description {
@@ -1406,7 +1407,6 @@ input[type="number"] {
 
 select {
   max-width: 270px;
-
 }
 
 .tickets-general {
@@ -1444,7 +1444,7 @@ select {
   object-fit: cover;
   padding: 25px;
 }
-.expressHogwarts p{
+.expressHogwarts p {
   margin-top: 10px;
   margin-left: 10px;
   max-width: 400px;
@@ -1491,7 +1491,6 @@ p {
 @media (max-width: 992px) {
   .projcard-container {
     max-width: 600px;
-
   }
 
   .projcard-description {
@@ -1538,7 +1537,6 @@ p {
     text-align: center;
   }
 
-
   .nav-item::after {
     display: none;
   }
@@ -1560,7 +1558,7 @@ p {
     display: none;
   }
 
-  .menu-hamburgesa{
+  .menu-hamburgesa {
     display: block;
   }
 
@@ -1611,7 +1609,7 @@ p {
     display: none;
   }
 
-  .menu-hamburgesa{
+  .menu-hamburgesa {
     display: block;
   }
   header {
@@ -1688,7 +1686,6 @@ p {
     width: 630px;
     height: 200px;
     margin-left: 20px;
-
   }
 
   .tickets {
@@ -1724,7 +1721,7 @@ p {
     display: none;
   }
 
-  .menu-hamburgesa{
+  .menu-hamburgesa {
     display: block;
   }
   .propaganda {
@@ -1875,7 +1872,7 @@ p {
     display: none;
   }
 
-  .menu-hamburgesa{
+  .menu-hamburgesa {
     display: block;
   }
   .title-tickets {
@@ -1902,7 +1899,7 @@ p {
   }
 
   .propaganda h3 {
-    margin-left: 10px
+    margin-left: 10px;
   }
 
   .whatsapp-propaganda {
@@ -1923,7 +1920,7 @@ p {
     display: none;
   }
 
-  .menu-hamburgesa{
+  .menu-hamburgesa {
     display: block;
   }
   .propaganda {
@@ -1941,7 +1938,7 @@ p {
   }
 
   .propaganda h3 {
-    margin-left: 10px
+    margin-left: 10px;
   }
 
   .whatsapp-propaganda {
