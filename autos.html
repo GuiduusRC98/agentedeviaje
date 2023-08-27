@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cotizacion.css">
+    <link rel="stylesheet" href="cotizacion.css" />
     <title>Gabita Travel Planner</title>
   </head>
 
@@ -40,55 +40,39 @@
           </li>
           <li class="nav-item">
             <a href="cruceros.html" class="nav-link">
-              <img
-                src="img/crucero_disney.svg"
-                alt="cruceros"
-                width="256px"
-                height="120px"
-              />
+              <img src="img/crucero_disney.svg" alt="cruceros" width="256px" height="120px" />
               <span>Cruceros</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="tickets.html" class="nav-link">
-              <img
-                src="img/ticket.svg"
-                alt="ticket"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/ticket.svg" alt="ticket" width="35px" height="24px" />
               <span>Tickets</span>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Disney_logo.svg"
-                alt="disney"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Disney_logo.svg" alt="disney" width="35px" height="24px" />
               <span>Disney</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="disney.html">Promos Disney</a></li>
               <li><a href="DisneyPaquetes.html">Paquetes Disney</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="disney.html" class="nav-link">Promos Disney</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="disneyPaquetes.html" class="nav-link">Paquetes Disney</a></li>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Universal_logo.svg"
-                alt="universal"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Universal_logo.svg" alt="universal" width="35px" height="24px" />
               <span>Universal</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="universal.html">Promos Universal</a></li>
               <li><a href="universalPaquetes.html">Paquetes Universal</a></li>
             </ul>
+              <li class="nav-item menu-hamburgesa"><a href="universal.html" class="nav-link">Promos Universal</a></li>
+              <li class="nav-item menu-hamburgesa"><a href="universalPaquetes.html" class="nav-link">Paquetes Universal</a></li>
           </li>
           <li class="nav-item">
             <a href="autos.html" class="nav-link">
@@ -106,40 +90,80 @@
               <li><a href="hotelesMiami.html">Hoteles Miami</a></li>
               <li><a href="otros_hoteles.html">Otros Destinos</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesOrlando.html" class="nav-link">Hoteles Orlando</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesMiami.html" class="nav-link">Hoteles Miami</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="otros_hoteles.html" class="nav-link">Otros Destinos</a></li>
           </li>
         </ul>
-      </nav>        
+      </nav>  
     </header>
     <div class="form-container">
-    <form id="reservationForm">
+      <form id="reservationForm" class="text-center form-cotizacion">
         <h1 class="form-header">Cotizar Automovil</h1>
         <label for="fechaRetiro">Fecha de retiro:</label>
-        <input type="date" id="fechaRetiro" required>
-    
-        <label for="lugarRetiro">Lugar de retiro:</label>
-        <input type="text" id="lugarRetiro" placeholder="Indique ciudad donde retira" required>
-    
-        <label for="horaRetiro">Hora de retiro:</label>
-        <input type="time" id="horaRetiro" required>
-    
-        <label for="fechaDevolucion">Fecha de devolución:</label>
-        <input type="date" id="fechaDevolucion" required>
-    
-        <label for="horaDevolucion">Hora de devolución:</label>
-        <input type="time" id="horaDevolucion" required>
-    
-        <label for="lugarDevolucion">Lugar de devolución:</label>
-        <input type="text" id="lugarDevolucion"  placeholder="Indique ciudad donde devolver" required>
+        <input type="date" id="fechaRetiro" required />
 
-        <label for="totalPeople" class="text-md-center">Cantidad de personas</label>
-                <div class="cantidad-selector">
-                    <button type="button" class="cantidad-btn" onclick="decreaseValuePeople()">-</button>
-                    <input type="number" id="totalPeople" name="totalPeople" min="0" max="20" value="0" required>
-                    <button type="button" class="cantidad-btn" onclick="increaseValuePeople()">+</button>
-                </div>
-                <div class="text-md-center">
-        <button type="button" class="btn btn-pink" onclick="enviarPorWhatsApp()">Cotizar Ya</button>
-      </div>
+        <label for="lugarRetiro">Lugar de retiro:</label>
+        <input
+          type="text"
+          id="lugarRetiro"
+          placeholder="Indique ciudad donde retira"
+          required
+        />
+
+        <label for="horaRetiro">Hora de retiro:</label>
+        <input type="time" id="horaRetiro" required />
+
+        <label for="fechaDevolucion">Fecha de devolución:</label>
+        <input type="date" id="fechaDevolucion" required />
+
+        <label for="horaDevolucion">Hora de devolución:</label>
+        <input type="time" id="horaDevolucion" required />
+
+        <label for="lugarDevolucion">Lugar de devolución:</label>
+        <input
+          type="text"
+          id="lugarDevolucion"
+          placeholder="Indique ciudad donde devolver"
+          required
+        />
+
+        <label for="totalPeople" class="text-md-center"
+          >Cantidad de personas</label
+        >
+        <div class="cantidad-selector">
+          <button
+            type="button"
+            class="cantidad-btn"
+            onclick="decreaseValuePeople()"
+          >
+            -
+          </button>
+          <input
+            type="number"
+            id="totalPeople"
+            name="totalPeople"
+            min="0"
+            max="20"
+            value="0"
+            required
+          />
+          <button
+            type="button"
+            class="cantidad-btn"
+            onclick="increaseValuePeople()"
+          >
+            +
+          </button>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <button
+            type="button"
+            class="btn btn-pink"
+            onclick="enviarPorWhatsApp()"
+          >Cotizar Ya
+          </button>
+        </div>
       </form>
     </div>
 

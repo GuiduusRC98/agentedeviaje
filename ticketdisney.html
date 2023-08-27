@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cotizacion.css" />
   <title>Gabita Travel Planner</title>
 </head>
 
@@ -31,55 +32,39 @@
         </li>
         <li class="nav-item">
           <a href="cruceros.html" class="nav-link">
-            <img
-              src="img/crucero_disney.svg"
-              alt="cruceros"
-              width="256px"
-              height="120px"
-            />
+            <img src="img/crucero_disney.svg" alt="cruceros" width="256px" height="120px" />
             <span>Cruceros</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="tickets.html" class="nav-link">
-            <img
-              src="img/ticket.svg"
-              alt="ticket"
-              width="35px"
-              height="24px"
-            />
+            <img src="img/ticket.svg" alt="ticket" width="35px" height="24px" />
             <span>Tickets</span>
           </a>
         </li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link">
-            <img
-              src="img/Disney_logo.svg"
-              alt="disney"
-              width="35px"
-              height="24px"
-            />
+            <img src="img/Disney_logo.svg" alt="disney" width="35px" height="24px" />
             <span>Disney</span>
           </a>
           <ul class="dropdown-menu">
             <li><a href="disney.html">Promos Disney</a></li>
             <li><a href="DisneyPaquetes.html">Paquetes Disney</a></li>
           </ul>
+          <li class="nav-item menu-hamburgesa"><a href="disney.html" class="nav-link">Promos Disney</a></li>
+          <li class="nav-item menu-hamburgesa"><a href="disneyPaquetes.html" class="nav-link">Paquetes Disney</a></li>
         </li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link">
-            <img
-              src="img/Universal_logo.svg"
-              alt="universal"
-              width="35px"
-              height="24px"
-            />
+            <img src="img/Universal_logo.svg" alt="universal" width="35px" height="24px" />
             <span>Universal</span>
           </a>
           <ul class="dropdown-menu">
             <li><a href="universal.html">Promos Universal</a></li>
             <li><a href="universalPaquetes.html">Paquetes Universal</a></li>
           </ul>
+            <li class="nav-item menu-hamburgesa"><a href="universal.html" class="nav-link">Promos Universal</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="universalPaquetes.html" class="nav-link">Paquetes Universal</a></li>
         </li>
         <li class="nav-item">
           <a href="autos.html" class="nav-link">
@@ -97,9 +82,12 @@
             <li><a href="hotelesMiami.html">Hoteles Miami</a></li>
             <li><a href="otros_hoteles.html">Otros Destinos</a></li>
           </ul>
+          <li class="nav-item menu-hamburgesa"><a href="hotelesOrlando.html" class="nav-link">Hoteles Orlando</a></li>
+          <li class="nav-item menu-hamburgesa"><a href="hotelesMiami.html" class="nav-link">Hoteles Miami</a></li>
+          <li class="nav-item menu-hamburgesa"><a href="otros_hoteles.html" class="nav-link">Otros Destinos</a></li>
         </li>
       </ul>
-    </nav>
+    </nav>  
   </header>
 
 
@@ -111,45 +99,50 @@
   </div>
   <br>
   <!-- Contacto a whastapp -->
-  <section class="login">
-    
-    <div class="form-container">
-      <form id="contactForm">
-        <h1 class="form-header">Tickets Disney</h1>
-        <label for="cantDias">Cantidad de días</label>
-          <div class="quantity-selector">
-            <button type="button" class="quantity-btn" onclick="decreaseValueDias()">-</button>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6">
+        <form id="contactForm" class="text-center form-cotizacion">
+          <h1 class="form-header">Tickets Disney</h1>
+          <label for="cantDias">Cantidad de días</label>
+          <div class="cantidad-selector">
+            <button type="button" class="cantidad-btn" onclick="decreaseValueDias()">-</button>
             <input type="number" id="cantDias" name="cantDias" min="3" max="10" value="3" required>
-            <button type="button" class="quantity-btn" onclick="increaseValueDias()">+</button>
+            <button type="button" class="cantidad-btn" onclick="increaseValueDias()">+</button>
           </div>
-        <label for="interest">Tipo de tickets</label>
-        <select id="interest" name="interest" required>
-          <option value="">Seleccione...</option>
-          <option value="Standard">Standard</option>
-          <option value="Water park and sport">Water park and sport</option>
-          <option value="Park hopper">Park hopper</option>
-          <option value="Park Hopper plus">Park Hopper plus </option>
-          <option value="Special Events Tickets">Special Events Tickets</option>
-        </select>
-
-        <label for="totalAdults">Adultos (10+)</label>
-          <div class="quantity-selector">
-            <button type="button" class="quantity-btn" onclick="decreaseValueAdult()">-</button>
+          <label for="interest">Tipo de tickets</label>
+          <select id="interest" name="interest" required>
+            <option value="">Seleccione...</option>
+            <option value="Standard">Standard</option>
+            <option value="Water park and sport">Water park and sport</option>
+            <option value="Park hopper">Park hopper</option>
+            <option value="Park Hopper plus">Park Hopper plus </option>
+            <option value="Special Events Tickets">Special Events Tickets</option>
+          </select>
+          <label for="totalAdults">Adultos (10+)</label>
+          <div class="cantidad-selector">
+            <button type="button" class="cantidad-btn" onclick="decreaseValueAdult()">-</button>
             <input type="number" id="totalAdults" name="totalAdults" min="0" max="10" value="0" required>
-            <button type="button" class="quantity-btn" onclick="increaseValueAdult()">+</button>
+            <button type="button" class="cantidad-btn" onclick="increaseValueAdult()">+</button>
           </div>
           <br>
-        <label for="totalChildren">Niños (de 3 a 9 años)</label>
-        <div class="quantity-selector">
-          <button type="button" class="quantity-btn" onclick="decreaseValue()">-</button>
-          <input type="number" id="totalChildren" name="totalChildren" min="0" max="10" value="0" required>
-          <button type="button" class="quantity-btn" onclick="increaseValue()">+</button>
-        </div>
-
-
-        <button type="submit">Cotizá Ya</button>
-      </form>
+          <label for="totalChildren">Niños (de 3 a 9 años)</label>
+          <div class="cantidad-selector">
+            <button type="button" class="cantidad-btn" onclick="decreaseValue()">-</button>
+            <input type="number" id="totalChildren" name="totalChildren" min="0" max="10" value="0" required>
+            <button type="button" class="cantidad-btn" onclick="increaseValue()">+</button>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-pink">
+              Cotizar Ya
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 
     <script>
       document.getElementById("contactForm").addEventListener("submit", function (event) {

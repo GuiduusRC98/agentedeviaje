@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cotizacion.css">
     <title>Gabita Travel Planner</title>
   </head>
 
@@ -39,55 +40,39 @@
           </li>
           <li class="nav-item">
             <a href="cruceros.html" class="nav-link">
-              <img
-                src="img/crucero_disney.svg"
-                alt="cruceros"
-                width="256px"
-                height="120px"
-              />
+              <img src="img/crucero_disney.svg" alt="cruceros" width="256px" height="120px" />
               <span>Cruceros</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="tickets.html" class="nav-link">
-              <img
-                src="img/ticket.svg"
-                alt="ticket"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/ticket.svg" alt="ticket" width="35px" height="24px" />
               <span>Tickets</span>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Disney_logo.svg"
-                alt="disney"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Disney_logo.svg" alt="disney" width="35px" height="24px" />
               <span>Disney</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="disney.html">Promos Disney</a></li>
               <li><a href="DisneyPaquetes.html">Paquetes Disney</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="disney.html" class="nav-link">Promos Disney</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="disneyPaquetes.html" class="nav-link">Paquetes Disney</a></li>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Universal_logo.svg"
-                alt="universal"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Universal_logo.svg" alt="universal" width="35px" height="24px" />
               <span>Universal</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="universal.html">Promos Universal</a></li>
               <li><a href="universalPaquetes.html">Paquetes Universal</a></li>
             </ul>
+              <li class="nav-item menu-hamburgesa"><a href="universal.html" class="nav-link">Promos Universal</a></li>
+              <li class="nav-item menu-hamburgesa"><a href="universalPaquetes.html" class="nav-link">Paquetes Universal</a></li>
           </li>
           <li class="nav-item">
             <a href="autos.html" class="nav-link">
@@ -105,9 +90,12 @@
               <li><a href="hotelesMiami.html">Hoteles Miami</a></li>
               <li><a href="otros_hoteles.html">Otros Destinos</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesOrlando.html" class="nav-link">Hoteles Orlando</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesMiami.html" class="nav-link">Hoteles Miami</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="otros_hoteles.html" class="nav-link">Otros Destinos</a></li>
           </li>
         </ul>
-      </nav>
+      </nav>     
     </header>
 
     <section>
@@ -176,7 +164,7 @@
         </div>
       </div>
     </section>
-    <div class="Currency">
+    <div class="Currency ">
       <div class="container row">
         <div class="row">
           <div class="col-md-12">
@@ -380,10 +368,10 @@
     </div>
     <br />
     <!-- Contacto a whastapp -->
-    <section class="login">
-      <h1 class="form-header">Solicitar información</h1>
-      <div class="form-container">
-        <form id="contactForm">
+      
+      <div class="form-container text-md-center">
+        <form id="contactForm" class="text-center form-cotizacion">
+          <h1 class="form-header">Solicitar información</h1>
           <label for="fullName">Nombre completo:</label>
           <input type="text" id="fullName" name="fullName" required />
 
@@ -405,14 +393,12 @@
           </select>
 
           <label for="totalAdults">Adultos (10+)</label>
-          <div class="quantity-selector">
+          <div class="cantidad-selector">
             <button
               type="button"
-              class="quantity-btn"
+              class="cantidad-btn"
               onclick="decreaseValueAdult()"
-            >
-              -
-            </button>
+            >-</button>
             <input
               type="number"
               id="totalAdults"
@@ -424,22 +410,18 @@
             />
             <button
               type="button"
-              class="quantity-btn"
+              class="cantidad-btn"
               onclick="increaseValueAdult()"
-            >
-              +
-            </button>
+            >+</button>
           </div>
           <br />
           <label for="totalChildren">Niños (de 3 a 9 años)</label>
-          <div class="quantity-selector">
+          <div class="cantidad-selector">
             <button
               type="button"
-              class="quantity-btn"
+              class="cantidad-btn"
               onclick="decreaseValue()"
-            >
-              -
-            </button>
+            >-</button>
             <input
               type="number"
               id="totalChildren"
@@ -451,17 +433,20 @@
             />
             <button
               type="button"
-              class="quantity-btn"
+              class="cantidad-btn"
               onclick="increaseValue()"
-            >
-              +
-            </button>
+            >+</button>
           </div>
 
           <label for="departureDate">Fecha de check-in aproximada:</label>
           <input type="date" id="departureDate" name="departureDate" required />
-
-          <button type="submit">Enviar</button>
+          <div class="d-flex align-items-center justify-content-center">
+            <button
+              type="button"
+              class="btn btn-pink"
+            >Enviar
+            </button>
+          </div>
         </form>
       </div>
 
@@ -511,7 +496,6 @@
             /* window.location.href = "https://www.ejemplo.com/pagina-de-agradecimiento"; */
           });
       </script>
-    </section>
 
     <br />
 

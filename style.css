@@ -388,19 +388,14 @@ nav {
 .tickets-margin {
   margin-right: 120px;
 }
-.Currency {
-  padding: 90px;
-}
 
 .Currency .titlepage {
   text-align: center;
   padding-bottom: 45px;
 }
-.title-tickets {
-  margin-left: 400px;
-}
+
 .Currency .titlepage h2 {
-  line-height: 72px;
+  padding: 50px 0 50px 0;
   color: #539df8;
   font-size: 55px;
   font-weight: 650;
@@ -433,7 +428,7 @@ nav {
   margin-top: -60px !important;
   border-radius: 15px 15px 15px 15px;
   text-align: center;
-  box-shadow: #ddd 0px 1px 1px 1px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   padding: 0px 20px 26px 20px;
   margin: 0 auto;
@@ -469,12 +464,8 @@ nav {
   line-height: 20px;
 }
 
-.three-box .promo {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .three-box:hover .promo {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .three-box .promo img {
@@ -1402,7 +1393,7 @@ nav {
 }
 
 input[type="number"] {
-  width: 50px;
+  width: 60px;
   height: 30px;
   text-align: center;
   font-size: 16px;
@@ -1504,9 +1495,6 @@ p {
     display: none;
   }
 
-  .btn {
-    margin: 0px 0px 0px -1rem;
-  }
 
   .navbarGabita .nav-list {
     display: none;
@@ -1746,11 +1734,8 @@ p {
   }
 
   .Currency .titlepage h2 {
-    line-height: 50px;
     color: #539df8;
     font-size: 35px;
-    font-weight: 650;
-    margin-left: -75px;
   }
 
   .Currency a {
@@ -1767,9 +1752,6 @@ p {
     margin: 0;
   }
 
-  .btn {
-    margin: -19.5rem;
-  }
 
   .projcard-bar {
     display: none;
@@ -1779,9 +1761,6 @@ p {
     display: none;
   }
 
-  .btn-izquierda {
-    margin-left: 9.5rem;
-  }
 
   .projcard-description {
     display: none;
@@ -1865,9 +1844,6 @@ p {
     padding-left: 0px;
   }
 
-  .title-tickets {
-    padding-left: 60px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1877,9 +1853,6 @@ p {
 
   .menu-hamburgesa {
     display: block;
-  }
-  .title-tickets {
-    padding-left: 60px;
   }
 
   .three-box {

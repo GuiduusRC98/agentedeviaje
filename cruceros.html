@@ -40,55 +40,39 @@
           </li>
           <li class="nav-item">
             <a href="cruceros.html" class="nav-link">
-              <img
-                src="img/crucero_disney.svg"
-                alt="cruceros"
-                width="256px"
-                height="120px"
-              />
+              <img src="img/crucero_disney.svg" alt="cruceros" width="256px" height="120px" />
               <span>Cruceros</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="tickets.html" class="nav-link">
-              <img
-                src="img/ticket.svg"
-                alt="ticket"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/ticket.svg" alt="ticket" width="35px" height="24px" />
               <span>Tickets</span>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Disney_logo.svg"
-                alt="disney"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Disney_logo.svg" alt="disney" width="35px" height="24px" />
               <span>Disney</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="disney.html">Promos Disney</a></li>
               <li><a href="DisneyPaquetes.html">Paquetes Disney</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="disney.html" class="nav-link">Promos Disney</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="disneyPaquetes.html" class="nav-link">Paquetes Disney</a></li>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link">
-              <img
-                src="img/Universal_logo.svg"
-                alt="universal"
-                width="35px"
-                height="24px"
-              />
+              <img src="img/Universal_logo.svg" alt="universal" width="35px" height="24px" />
               <span>Universal</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="universal.html">Promos Universal</a></li>
               <li><a href="universalPaquetes.html">Paquetes Universal</a></li>
             </ul>
+              <li class="nav-item menu-hamburgesa"><a href="universal.html" class="nav-link">Promos Universal</a></li>
+              <li class="nav-item menu-hamburgesa"><a href="universalPaquetes.html" class="nav-link">Paquetes Universal</a></li>
           </li>
           <li class="nav-item">
             <a href="autos.html" class="nav-link">
@@ -106,9 +90,12 @@
               <li><a href="hotelesMiami.html">Hoteles Miami</a></li>
               <li><a href="otros_hoteles.html">Otros Destinos</a></li>
             </ul>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesOrlando.html" class="nav-link">Hoteles Orlando</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="hotelesMiami.html" class="nav-link">Hoteles Miami</a></li>
+            <li class="nav-item menu-hamburgesa"><a href="otros_hoteles.html" class="nav-link">Otros Destinos</a></li>
           </li>
         </ul>
-      </nav>
+      </nav>  
     </header>
     <div class="form-container">
       <form id="reservationForm" class="text-md-center form-cotizacion">
@@ -197,13 +184,14 @@
           </button>
         </div>
 
-        <button
-          type="button"
-          class="btn btn-pink"
-          onclick="enviarPorWhatsAppCrucero()"
-        >
-          Cotizar Ya
-        </button>
+        <div class="d-flex align-items-center justify-content-center">
+          <button
+            type="button"
+            class="btn btn-pink"
+            onclick="enviarPorWhatsAppCrucero()"
+          >Cotizar Ya
+          </button>
+        </div>
       </form>
     </div>
 
