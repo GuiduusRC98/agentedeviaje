@@ -1,12 +1,38 @@
 class Promocion {
-    constructor(id, titulo, descripcion, parque, img, linkeo) {
+    constructor(id, titulo, substitulo, descripcion, parque, img, linkeo, color, tag =["Disney", "Parques", "Promos", "Disney Resort", "Hoteles", "Disneyland", "Universal", "Halloween"]) {
         this.id = id
         this.titulo = titulo
         this.descripcion = descripcion
+        this.substitulo = substitulo
         this.parque = parque
         this.img = img
-        this.linke = linkeo
+        this.linkeo = linkeo
+        this.color = color
+        this.tag = tag
     }
+
+    
+    promoParques() {
+      return `
+      <div class="projcard projcard-${this.color}">
+      <div class="projcard-innerbox">
+        <img class="projcard-img"
+          src="${this.img}" />
+        <div class="projcard-textbox">
+          <div class="projcard-title ">${this.titulo}</div>
+          <div class="projcard-subtitle">${this.substitulo}</div>
+          <div class="projcard-bar"></div>
+          <div class="projcard-description">${this.descripcion}</div>
+          <div class="projcard-tagbox">
+            <span class="projcard-tag">${this.tag}</span>
+            <span class="projcard-tag">${this.tag}</span>
+            <a href="${this.linkeo}"
+              target="_blank" class="btn btn-pink">Cotizar promo</a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }
 
     descripcion_Promocion() {
         return `
@@ -81,8 +107,59 @@ class PromoController {
   }
 }
 
-const cp = new PromoController()
+class promosDisney {
+  constructor() {
+      this.promoDisney = [];
+  }
 
-cp.cargarProductosDesdeJSON().then(() =>{
-    cp.mostrarPromosEnDom()
+  agregar(promocion) {
+      this.promoDisney.push(promocion)
+  }
+
+  async PromoDisneyJson() {
+      try{
+          const resp = await fetch('promoDisney.json')
+          if(!resp.ok){
+              throw new Error('No se pudo cargar el archivo JSON')
+          }
+          const data = await resp.json()
+
+          this.promoDisney = data
+
+          console.log(this.promoDisney)
+      }catch (error) {
+          console.error('Error al cargar los productor:', error)
+      }
+  }
+
+  mostrarPromosDisneyEnDom() {
+  let ultimas_promosDisney = document.getElementById("promosDisney")
+  ultimas_promosDisney.innerHTML = ""
+
+  this.promoDisney.forEach(promoDataDisney => {
+    const promodisney = new PromocionDisney( 
+      promoDataDisney.id,
+      promoDataDisney.titulo,
+      promoDataDisney.descripcion,
+      promoDataDisney.parque,
+      promoDataDisney.img,
+      promoDataDisney.linkeo
+    )
+    const div = document.createElement("div")
+    div.innerHTML = promodisney.promoParques()
+    ultimas_promosDisney.appendChild(div)
+})
+
+  }
+}
+
+const pc = new PromoController()
+const pd = new promosDisney()
+
+pc.cargarProductosDesdeJSON().then(() =>{
+  pc.mostrarPromosEnDom()
+})
+
+pd.PromoDisneyJson().then(() =>{
+  pd.mostrarPromosDisneyEnDom()
 })
