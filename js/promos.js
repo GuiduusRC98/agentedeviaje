@@ -94,10 +94,12 @@ class PromoController {
     const promocion = new Promocion( 
         promoData.id,
         promoData.titulo,
+        promoData.substitulo,
         promoData.descripcion,
         promoData.parque,
         promoData.img,
-        promoData.linkeo
+        promoData.linkeo,
+        promoData.color
     )
     const div = document.createElement("div")
     div.innerHTML = promocion.descripcion_Promocion()
@@ -140,10 +142,12 @@ class promosDisney {
     const promodisney = new promoDataDisney( 
       promoDataDisney.id,
       promoDataDisney.titulo,
+      promoDataDisney.substitulo,
       promoDataDisney.descripcion,
       promoDataDisney.parque,
       promoDataDisney.img,
-      promoDataDisney.linkeo
+      promoDataDisney.linkeo,
+      promoDataDisney.color
     )
     const div = document.createElement("div")
     div.innerHTML = promodisney.promoParques()
