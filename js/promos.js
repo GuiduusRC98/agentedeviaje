@@ -133,11 +133,11 @@ class promosDisney {
   }
 
   mostrarPromosDisneyEnDom() {
-  let ultimas_promosDisney = document.getElementById("promosDisney")
-  ultimas_promosDisney.innerHTML = ""
+  let promosDisney = document.getElementById("promosDisney")
+  promosDisney.innerHTML = ""
 
   this.promoDisney.forEach(promoDataDisney => {
-    const promodisney = new PromocionDisney( 
+    const promodisney = new promoDataDisney( 
       promoDataDisney.id,
       promoDataDisney.titulo,
       promoDataDisney.descripcion,
