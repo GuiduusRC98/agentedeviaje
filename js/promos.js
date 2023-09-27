@@ -46,7 +46,7 @@ class PromoController {
 
   async cargarProductosDesdeJSON() {
       try{
-          const resp = await fetch('../ultimasPromos.json')
+          const resp = await fetch('./ultimasPromos.json')
           if(!resp.ok){
               throw new Error('No se pudo cargar el archivo JSON')
           }
