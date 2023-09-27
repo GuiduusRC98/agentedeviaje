@@ -139,7 +139,7 @@ class promosDisney {
   promosDisney.innerHTML = ""
 
   this.promoDisney.forEach(promoDataDisney => {
-    const promodisney = new promoDataDisney( 
+    const promodisney = new Promocion(
       promoDataDisney.id,
       promoDataDisney.titulo,
       promoDataDisney.substitulo,
