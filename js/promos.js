@@ -151,7 +151,8 @@ class promosDisney {
     )
     const div = document.createElement("div")
     div.innerHTML = promodisney.promoParques()
-    ultimas_promosDisney.appendChild(div)
+    promosDisney.appendChild(div)
+
 })
 
   }
