@@ -8,7 +8,8 @@
       "img": "https://images.musement.com/cover/0161/23/thumb_16022002_cover_header.jpg",
       "linkeo": "https://api.whatsapp.com/send?phone=+5493416483029&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20promo%204-Day,%204-Park%20Magic%20Ticket",
       "color": "blue",
-      "tag":  ["Disney", "Parques"]
+      "tag":  "Disney",
+      "tag2": "Parques"
     },
     {
         "id": "2",
@@ -19,7 +20,8 @@
         "img": "https://media.viajando.travel/p/ea02879547456df3bcbc13a84579d867/adjuntos/236/imagenes/000/553/0000553143/1200x675/smart/walt-disney-world-resort-all-star-movies.png",
         "linkeo": "https://api.whatsapp.com/send?phone=+5493416483029&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20promo%20%2230%%20en%20habitaciones%20en%20hoteles%20selectos%20de%20Disney%20Resort%22",
         "color": "red",
-        "tag": ["Disney Resort", "Hoteles"]
+        "tag": "Disney Resort",
+        "tag2": "Hoteles"
       },
       {
         "id": "3",
@@ -30,6 +32,7 @@
         "img": "https://www.kayak.com.ar/rimg/kimg/e9/39/35c9ad5f83c125f5.jpg?width=1366&height=768&crop=true",
         "linkeo": "https://api.whatsapp.com/send?phone=+5493416483029&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20promo%20%2220%%20en%20estad%C3%ADas%20selecionadas%20en%20Hotel%20de%20Disneyland%20Resort%22",
         "color": "green",
-        "tag": ["Disneyland", "Hoteles"]
+        "tag": "Disneyland",
+        "tag2": "Hoteles"
       }
   ]

@@ -1,5 +1,5 @@
 class Promocion {
-    constructor(id, titulo, substitulo, descripcion, parque, img, linkeo, color, tag =["Disney", "Parques", "Promos", "Disney Resort", "Hoteles", "Disneyland", "Universal", "Halloween"]) {
+    constructor(id, titulo, substitulo, descripcion, parque, img, linkeo, color, tag, tag2) {
         this.id = id
         this.titulo = titulo
         this.descripcion = descripcion
@@ -9,6 +9,7 @@ class Promocion {
         this.linkeo = linkeo
         this.color = color
         this.tag = tag
+        this.tag = tag2
     }
 
     
@@ -25,7 +26,7 @@ class Promocion {
           <div class="projcard-description">${this.descripcion}</div>
           <div class="projcard-tagbox">
             <span class="projcard-tag">${this.tag}</span>
-            <span class="projcard-tag">${this.tag}</span>
+            <span class="projcard-tag">${this.tag2}</span>
             <a href="${this.linkeo}"
               target="_blank" class="btn btn-pink">Cotizar promo</a>
           </div>
@@ -99,7 +100,9 @@ class PromoController {
         promoData.parque,
         promoData.img,
         promoData.linkeo,
-        promoData.color
+        promoData.color,
+        promoData.tag,
+        promoData.tag2
     )
     const div = document.createElement("div")
     div.innerHTML = promocion.descripcion_Promocion()
@@ -147,7 +150,9 @@ class promosDisney {
       promoDataDisney.parque,
       promoDataDisney.img,
       promoDataDisney.linkeo,
-      promoDataDisney.color
+      promoDataDisney.color,
+      promoDataDisney.tag,
+      promoDataDisney.tag2
     )
     const div = document.createElement("div")
     div.innerHTML = promodisney.promoParques()
