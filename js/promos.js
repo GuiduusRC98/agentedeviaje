@@ -102,7 +102,7 @@ class PromoController {
         promoData.linkeo,
         promoData.color,
         promoData.tag,
-        promoData.tag2
+        promoData.tag2,
     )
     const div = document.createElement("div")
     div.innerHTML = promocion.descripcion_Promocion()
@@ -152,7 +152,7 @@ class promosDisney {
       promoDataDisney.linkeo,
       promoDataDisney.color,
       promoDataDisney.tag,
-      promoDataDisney.tag2
+      promoDataDisney.tag2,
     )
     const div = document.createElement("div")
     div.innerHTML = promodisney.promoParques()
