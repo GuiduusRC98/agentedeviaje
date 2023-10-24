@@ -1926,3 +1926,8 @@ p {
     margin-left: 5px;
   }
 }
+
+.formularioindex{
+  display: flex;
+  flex-direction: column;
+}
