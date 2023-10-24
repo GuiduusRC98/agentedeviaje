@@ -6,16 +6,8 @@ body {
   background-position: center;
   background-size: cover;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f8f8f8;
 }
-
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
-} */
 
 .max-inicio {
   width: 100%;
@@ -400,7 +392,10 @@ nav {
   font-size: 55px;
   font-weight: 650;
 }
-
+.Currency .promoindex{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .Currency a {
   text-decoration: none;
 }
@@ -729,7 +724,7 @@ button[type="submit"]:hover {
   }
 
   .about-right {
-    opacity: 0;
+    display: none;
   }
 
   .login {
@@ -954,12 +949,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
 }
 
 .max-inicio {
@@ -1468,6 +1457,16 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .projcard-tagbox{
+    bottom: 1%;
+  }
+  .projcard-description{
+    overflow-y: scroll;
+    max-height: 80px;
+  }
+  .projcard-tag{
+    display: none;
+  }
   .projcard-container {
     max-width: 800px;
   }
@@ -1475,7 +1474,11 @@ p {
   .three-box {
     margin-top: 1em;
   }
-
+  
+  .Currency .promoindex{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   .Currency a {
     text-decoration: none;
   }
@@ -1483,7 +1486,7 @@ p {
 
 @media (max-width: 992px) {
   .projcard-container {
-    max-width: 600px;
+    max-width: 650px;
   }
 
   .projcard-description {
@@ -1595,6 +1598,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .expressHogwarts {
+    display: none;
+  }
   .dropdown {
     display: none;
   }
@@ -1651,10 +1657,6 @@ p {
   .nav-link img {
     color: #333;
   }
-
-  /* .nav-item.dropdown:hover .dropdown-menu {
-    display: none;
-  } */
 
   .nav-item.active .dropdown-menu {
     display: block;
