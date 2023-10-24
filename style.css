@@ -1927,7 +1927,8 @@ p {
   }
 }
 
-.formularioindex{
-  display: flex;
-  flex-direction: column;
+.formularioindex img{
+  width: 50%;
+  height: 50%;
+  
 }
